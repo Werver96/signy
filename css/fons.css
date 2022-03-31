@@ -1,0 +1,31 @@
+/*Стили шрифтов*/
+.header_contant, .contant_slogans, .product_text {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.header_main_tittle, .product_tittle{
+	font-family: 'IBM Plex Serif', serif;
+}
+/*Размеры шрифтов*/
+.header_nav_main {
+	font-size: 14px;
+}
+.header_main_number, .product_text {
+	font-size: 18px;
+}
+.header_main_number_active, .header_main_subtittle, .motto_slogan_tittle{
+	font-size: 24px;
+}
+.header_main_tittle, .product_tittle{
+	font-size: 40px;
+}
+
+/*Толщина шрифтов*/
+.header_nav_main, .header_main_tittle, .motto_slogan_tittle, .product_tittle {
+	font-weight: 500;
+}
+.header_nav_main{
+	font-weight: 600;
+}
+.header_main_subtittle {
+	font-weight: 700;
+}
