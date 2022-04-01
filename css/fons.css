@@ -1,5 +1,5 @@
 /*Стили шрифтов*/
-.wrapper{
+body{
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 .header_main_tittle, 
@@ -8,7 +8,8 @@
 .about_tittle,
 .acq_tittle,
 .answer_tittle,
-.mailing_tittle{
+.mailing_tittle,
+.frame_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
@@ -47,7 +48,8 @@
 .about_tittle,
 .acq_tittle,
 .answer_tittle,
-.mailing_tittle{
+.mailing_tittle,
+.frame_tittle{
 	font-size: 40px;
 }
 .sign_info span{
@@ -88,6 +90,8 @@
 .about_tittle,
 .acq_content,
 .answer_tittle,
-.mailing_content {
+.mailing_content,
+.footer_item,
+.frame_content {
 	text-align: center;
 }

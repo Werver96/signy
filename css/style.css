@@ -387,7 +387,7 @@ input.answer_radio:checked + label + div + input + label{
 .footer_container {}
 .footer_content {
 	display: flex;
-	padding: 60px;
+	padding: 3.47vw;
 	flex-wrap: wrap;
 }
 .footer_left_body {
@@ -397,27 +397,54 @@ input.answer_radio:checked + label + div + input + label{
 	justify-content: space-around;
 }
 .clearfix:after { content: "."; visibility: hidden; display: block; height: 0; clear: both }
-.footer_logo {}
+.footer_logo {
+	margin-right: 6.77vw;
+}
 .footer_nav {
 	display: flex;
+	flex-wrap: wrap;
 }
-.footer_left {}
-.footer_elem {}
+.footer_left {
+	flex: 1 1 60px;
+	margin: 0 25px 32px;
+}
+.footer_elem {
+	margin-bottom: 5px;
+}
 .footer_right_body {
+	display: flex;
 	flex: 1 1 50%;
 }
 .footer_contact {
 	display: flex;
-	justify-content: center;
-	justify-content: space-around;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 .footer_component {}
-.footer_mail {}
-.footer_address {}
-.footer_bottom {
-	flex: 1 1 auto;
+.footer_mail {
+	margin-right: 2.78vw;
+	margin-bottom: 5px;
 }
-.footer_item {}
+.footer_address {
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+.footer_bottom {
+	margin: 0 auto;
+}
+.footer_item {
+	opacity: 0.4;
+}
+/*Оформляем всплывающее окно*/
+.frame {}
+.frame_container {}
+.frame_content {
+	padding: 5.86vw 0 6.6vw 0;
+}
+.frame_tittle {
+	margin-bottom: 40px;
+}
+.frame_text {}
 
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
