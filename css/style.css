@@ -37,7 +37,7 @@
 	background: #0046B0;
 	color: white;
 }
-/* Поведение кнопки регистрация при нажатии*/
+/* Поведение кнопки регистрация*/
 .button_full_mob, .button_blank_mob, .button_full_mob:hover, .button_blank_mob:hover, .button_full_mob:active, .button_blank_mob:active{
 	padding: 8px 32px;
 }
@@ -179,36 +179,64 @@
 }
 /*Оформляем подписи документов*/
 .sign {}
-.sign_container {}
-.sign_content {
-	text-align: center;
+.sign_container {
+	max-width: 80%;
+	margin: 0 auto;
 }
+.sign_content {}
 .sign_tittle {
-	margin: 60px 0;
+	text-align: center;
+	margin: 57px 0 25px;
 }
 .sign_body {
 	display: flex;
 	justify-content: center;
+	justify-content: space-around;
+	padding: 0 4px;
+
 }
 .sign_elem {
-	flex: 0 0 17%;
+	padding: 32px;
 	background: #DEEEFC;
-	margin: 0 16px 90px 16px;
-
+	flex: 0 1 256px;
+	height: 320px;
+	margin: 2px;
+	position: relative;
+	border-radius: 4px;
 }
 .sign_subtittle {}
-.sign_text {}
-.sign_info {}
+.sign_text {
+	margin-top: 44px;
+}
+.sign_info {
+	margin-top: 34px;
+}
+.sign_info span{}
 .sign_button {}
-
-
+/*Оформляем кнопки */
+.sign_button .button_full_mob, .sign_button .button_full_mob:hover, .sign_button .button_full_mob:active{
+	padding: 14px 15px;
+	float: left;
+	text-align: center;
+	width: 75%;
+	position: absolute;
+	bottom: 32px;
+}
+@media(max-width: 1440px){
+.sign_container{
+	max-width: 100%; 
+}
+}
 @media(max-width: 992px){
+/*Скрываем меню */
 .header_nav_main {
 	display: none;
 }
+/*Делаем изображение pruduct широкой, элементы сами становяться в одну колону*/
 .product_img {
 	width: 85vw;
 }
+/*Выставляем последовательность элементов produkt*/
 .product_elem_1{
 	order: 1;
 }
@@ -221,5 +249,16 @@
 .product_elem_4{
 	padding-left:15px;
 	order: 3;
+}
+/**/
+.sign_container{
+	max-width: 75vw;
+	margin: 0 auto;
+}
+.sign_body{
+	flex-wrap: wrap;
+}
+.sign_elem{
+margin-top: 3.47vw;
 }
 }

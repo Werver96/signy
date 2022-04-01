@@ -1,31 +1,51 @@
 /*Стили шрифтов*/
-.header_contant, .contant_slogans, .product_text {
+.wrapper{
 	font-family: 'IBM Plex Sans', sans-serif;
 }
-.header_main_tittle, .product_tittle{
+.header_main_tittle, 
+.product_tittle, 
+.sign_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
+.sign_button{
+	font-size: 12px;
+}
 .header_nav_main {
 	font-size: 14px;
 }
 .header_main_number, .product_text {
 	font-size: 18px;
 }
-.header_main_number_active, .header_main_subtittle, .motto_slogan_tittle{
+.sign_info{
+	font-size: 20px;
+}
+.header_main_number_active, .header_main_subtittle, 
+.motto_slogan_tittle{
 	font-size: 24px;
 }
-.header_main_tittle, .product_tittle{
+.sign_subtittle{
+	font-size: 28px;
+}
+.header_main_tittle, 
+.product_tittle, 
+.sign_tittle{
 	font-size: 40px;
 }
-
+.sign_info span{
+	font-size: 48px;
+}
 /*Толщина шрифтов*/
-.header_nav_main, .header_main_tittle, .motto_slogan_tittle, .product_tittle {
+.header_nav_main, .header_main_tittle, 
+.motto_slogan_tittle, 
+.product_tittle, 
+.sign_tittle, .sign_text, .sign_info{
 	font-weight: 500;
 }
-.header_nav_main{
+.header_nav_main, 
+.sign_button, .sign_subtittle{
 	font-weight: 600;
 }
-.header_main_subtittle {
+.header_main_subtittle, .sign_info span {
 	font-weight: 700;
 }
