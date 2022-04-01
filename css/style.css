@@ -38,7 +38,8 @@
 	color: white;
 }
 /* Поведение кнопки регистрация*/
-.button_full_mob, .button_blank_mob, .button_full_mob:hover, .button_blank_mob:hover, .button_full_mob:active, .button_blank_mob:active{
+.button_full_mob, .button_blank_mob, .button_full_mob:hover, 
+.button_blank_mob:hover, .button_full_mob:active, .button_blank_mob:active{
 	padding: 8px 32px;
 }
 /* Оформление header*/
@@ -183,10 +184,11 @@
 	max-width: 80%;
 	margin: 0 auto;
 }
-.sign_content {}
+.sign_content {
+	padding: 2.08vw 0 3.47vw;
+}
 .sign_tittle {
-	text-align: center;
-	margin: 57px 0 25px;
+	margin-bottom: 25px;
 }
 .sign_body {
 	display: flex;
@@ -214,7 +216,8 @@
 .sign_info span{}
 .sign_button {}
 /*Оформляем кнопки */
-.sign_button .button_full_mob, .sign_button .button_full_mob:hover, .sign_button .button_full_mob:active{
+.sign_button .button_full_mob, .sign_button .button_full_mob:hover, 
+.sign_button .button_full_mob:active{
 	padding: 14px 15px;
 	float: left;
 	text-align: center;
@@ -222,7 +225,203 @@
 	position: absolute;
 	bottom: 32px;
 }
+/*Оформляем блок документы*/
+.document {}
+.document_container {}
+.document_content {
+	padding: 45px 0;
+}
+.document_tittle {
+	padding-bottom: 25px;
+}
+.document_subtittle {
+	padding-bottom: 15px;
+}
+.document_text {}
+/*Оформляем блок партнеров/коллег*/
+.friends {}
+/* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
+ при большой ширине экрана*/
+.friends_container {
+	max-width: 75vw;
+	margin: 0 auto;
+}
+.friends_content {
+	padding: 50px 0;
+}
+.friends_tittle {
+	padding-bottom: 50px;
+}
+.friends_logo {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.friends_elem {
+	margin: 0 1.04em;
+}
+.friends_input {
+	margin-top: 40px;
+}
+/*Оформляем блок "пишем про"*/
+.about {}
+.about_container {}
+.about_content {
+	padding: 45px 0;
+}
+.about_tittle {
+	margin-bottom: 32px;
+}
+.about_body {
+	display: flex;
+	justify-content: center;
+}
+.about_elem {
+	display: block;
+	flex: 0 1 374px;
+	margin: 0 1.875vw;
+}
+.about_img img{
+	width: 100%;
+}
+.about_date {
+	margin: 15px 0 ;
+	padding-left: 20px;
+}
+.about_subtittle {
+	padding: 0 20px;
+}
+/*Оформляем блок с видео*/
+.acq {}
+.acq_container {}
+.acq_content {
+	padding: 63px 0;
+}
+.acq_tittle {
+	margin-bottom: 50px;
+}
+.acq_video iframe {
+	width: 734px;
+	height: 451px;
+}
+/*Оформляем блок с вопросами*/
+.answer {}
+.answer_container {}
+.answer_content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 45px 0;
+}
+.answer_tittle {
+	margin-bottom: 40px;
+}
+/*.answer_list {}
+.answer_question {}
+.answer_radio {}
+input.answer_radio{
+	display: none;
+}
+input.answer_radio + label + div{
+	display: none;
+}
+input.answer_radio:checked + label + div{
+	display: block;
+}
+input.answer_radio + label{
+	text-decoration: underline;
+	cursor: pointer;
+}
+input.answer_radio:checked + label{
+	display: none;
+}
+input.answer_radio + label + div + input + label{
+	display: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+input.answer_radio:checked + label + div + input + label{
+	display: block;
+}*/
+
+.answer_text {
+	max-width: 550px;
+	margin: 0 auto;
+}
+.answer_elem {
+	margin: 10px 0;
+}
+.answer_elem:nth-child(even) {
+	margin-bottom: 20px;
+}
+/*Оформляем блок рассылки*/
+.mailing {}
+.mailing_container {}
+.mailing_content {
+	padding: 60px 0 100px;
+}
+.mailing_tittle {}
+.mailing_text {
+	margin-top: 40px;
+}
+.mailing_form {}
+.mailing_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mailing_elem {
+	margin: 35px 9px;
+}
+.mailing_area {
+	padding: 0 20px;
+	height: 50px;
+	border: 1px solid #1064E5;
+	border-radius: 37px;
+}
+.mailing_submit {
+	letter-spacing: 0.19em;
+	padding: 16px 32px;
+}
+/*Оформляем подвал*/
+.footer {}
+.footer_container {}
+.footer_content {
+	display: flex;
+	padding: 60px;
+	flex-wrap: wrap;
+}
+.footer_left_body {
+	display: flex;
+	flex: 1 1 50%;
+	justify-content: center;
+	justify-content: space-around;
+}
+.clearfix:after { content: "."; visibility: hidden; display: block; height: 0; clear: both }
+.footer_logo {}
+.footer_nav {
+	display: flex;
+}
+.footer_left {}
+.footer_elem {}
+.footer_right_body {
+	flex: 1 1 50%;
+}
+.footer_contact {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.footer_component {}
+.footer_mail {}
+.footer_address {}
+.footer_bottom {
+	flex: 1 1 auto;
+}
+.footer_item {}
+
 @media(max-width: 1440px){
+/* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
+ при большой ширине экрана*/
 .sign_container{
 	max-width: 100%; 
 }
@@ -250,9 +449,10 @@
 	padding-left:15px;
 	order: 3;
 }
-/**/
+/*Задаем максимальные размеры контейнеру для того чтобы элементы перенеслись 
+в 2 колоны*/
 .sign_container{
-	max-width: 75vw;
+	max-width: 76%;
 	margin: 0 auto;
 }
 .sign_body{
@@ -260,5 +460,8 @@
 }
 .sign_elem{
 margin-top: 3.47vw;
+}
+.friends_container{
+	max-width: auto;
 }
 }

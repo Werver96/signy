@@ -5,16 +5,28 @@
 
 /*Цвет фона/фон*/
 .header_container{
-background:url(../image/header/header_img.jpg) right top no-repeat,
+	background:url(../image/header/header_img.jpg) right top no-repeat,
  url(../image/header/header_bg.png) ;
 }
-.product_container {
-background: #D8F1F0;
+.product_container,
+.document_container,
+.about_container
+{
+	background: #D8F1F0;
+}
+.answer_container{
+	background: #DEEEFC;
+}
+.footer_container {
+	background: #061224;
+}
+.footer_address, .footer_mail, .footer_container a {
+	color: white;
 }
 /*Медиазапрос при 992px ширины экрана*/
 @media(max-width: 992px){
 .header_container{
-background:url(../image/header/header_img.jpg) right -125px top no-repeat,
- url(../image/header/header_bg.png);
+	background:url(../image/header/header_img.jpg) right -125px top no-repeat, 
+	url(../image/header/header_bg.png);
 }
 };
