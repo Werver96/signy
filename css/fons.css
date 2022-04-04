@@ -10,7 +10,8 @@ body{
 .answer_tittle,
 .mailing_tittle,
 .frame_tittle,
-.writing_tittle{
+.writing_tittle,
+.video_header_tittle, .video_name{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
@@ -22,7 +23,8 @@ body{
 .header_nav_main,
 .about_date,
 .footer_content,
-.writing_date {
+.writing_date,
+.video_header_date {
 	font-size: 14px;
 }
 .header_main_number, .product_text,
@@ -37,11 +39,15 @@ body{
 .header_main_number_active, .header_main_subtittle, 
 .motto_slogan_tittle,
 .about_subtittle,
-.mailing_area{
+.mailing_area,
+.video_main_tittle{
 	font-size: 24px;
 }
 .sign_subtittle{
 	font-size: 28px;
+}
+.video_header_subtittle{
+	font-size: 36px;
 }
 .header_main_tittle, 
 .product_tittle, 
@@ -54,7 +60,8 @@ body{
 .mailing_tittle,
 .frame_tittle,
 .writing_tittle, .writing_sumtittle,
-.seo_tittle{
+.seo_tittle,
+.video_header_tittle, .video_name{
 	font-size: 40px;
 }
 .sign_info span{
@@ -75,16 +82,16 @@ body{
 .answer_tittle,
 .mailing_tittle,
 .footer_content,
-.writing_tittle,
-.writing_date,
-.writing_number{
+.writing_tittle, .writing_date, .writing_number,
+.video_header_tittle, .video_header_subtittle, .video_header_date, .video_name{
 	font-weight: 500;
 }
 .header_nav_main, 
 .sign_button, .sign_subtittle,
 .about_subtittle,
 .writing_sumtittle,
-.seo_tittle{
+.seo_tittle,
+.video_main_tittle{
 	font-weight: 600;
 }
 .header_main_subtittle, .sign_info span {
@@ -104,6 +111,7 @@ body{
 .mailing_content,
 .footer_item,
 .frame_content,
-.seo_button{
+.seo_button,
+.video_name{
 	text-align: center;
 }
