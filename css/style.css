@@ -43,9 +43,12 @@
 	padding: 8px 32px;
 }
 /* Оформление header*/
-.header_container {
-	padding: 40px 7vw;
 
+.header_container {
+	padding: 40px 7vw 0;
+}
+.main .header_container {
+	padding: 40px 7vw;
 }
 .header_contant {}
 .header_img{}
@@ -57,16 +60,40 @@
 .header_nav_logo {
 	margin-right: auto;
 }
+.header_nav_logo a{
+	display: block;
+}
 .header_nav_main {}
 .header_nav_lists {}
 .header_nav_list {
+	position: relative;
 	display: inline-block;
 	margin: 0 1vw;
 }
 .header_nav_list:nth-child(6){
 	margin: 9.5px 0.5vw;
 }
+
+
 .header_nav_link {}
+/*Настраиваем "хлебные крошки"*/
+.header_status {}
+.header_status_text {
+	margin-top: 3.52vw;
+	opacity: 0.6;
+}
+/*Оформляем выпадающее меню*/
+.header_nav_list ul{
+	position: absolute;
+	display: none;
+}
+.header_nav_list:hover .header_nav_sublink {
+	display: block;
+}
+.header_nav_sublink a{
+	display: block;
+}
+
 
 .header_main {
 
@@ -347,6 +374,34 @@ input.answer_radio:checked + label + div + input + label{
 	max-width: 550px;
 	margin: 0 auto;
 }
+/*Изменяем маркер меню-аккардион*/
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:inline-block;
+   padding: .3em .5em .3em .4em;
+   font-size:1.125em;
+   cursor: pointer;
+}
+summary:before {  
+  content: "+";
+  margin-right: .3em;
+}
+details[open] > summary:before {
+  content: "–";
+}
+summary ~ * {
+   padding:0 1em 0 1em;
+}
+summary:focus {
+  outline:0;
+
+}
+details{
+  display:block;
+  margin-bottom: .5rem;
+}
 .answer_elem {
 	margin: 10px 0;
 }
@@ -400,6 +455,9 @@ input.answer_radio:checked + label + div + input + label{
 .footer_logo {
 	margin-right: 6.77vw;
 }
+.footer_logo a, {
+	display: block;
+}
 .footer_nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -446,11 +504,135 @@ input.answer_radio:checked + label + div + input + label{
 }
 .frame_text {}
 
+/*Оформляем страницу блог*/
+.writing {}
+.writing_container {
+	padding: 2vw 7vw 3vw;
+}
+.writing_content {}
+.writing_tittle {
+	margin-bottom: 2vw;
+}
+.writing_header {
+	display: flex;
+}
+.writing_header_image {
+	margin-right: 3vw;
+	flex: 1 0 60%;
+}
+.writing_header_image img{
+	width: 100%;
+}
+.writing_header_info {}
+.writing_date {
+	margin: 5px 0 15px;
+}
+.writing_sumtittle {}
+.writing_tag {
+	display: flex;
+	margin: 15px 0;
+}
+.writing_tag_elem {
+	background: #E5E5E5;
+ 	border-radius: 23px;
+ 	padding: 5px 11px;
+ 	margin-right: 14px;
+}
+.writing_text {
+	line-height: 1.5em;
+}
+.writing_link {
+	margin-top: 8px;
+}
+.writing_nav {
+	display: flex;
+	margin-left: 7vw;
+}
+.writing_nav_elem {
+	margin: 0 4vw 2vw 0;
+}
+/*Настраиваем контентную часть блога*/
+.writing_body {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 7vw;
+}
+.writing_elem {
+	flex: 1 1 25%;
+	margin-bottom: 4.5vw;
+}
+.writing_elem:nth-child(2), .writing_elem:nth-child(5), .writing_elem:nth-child(8) {
+margin: 0 4vw;
+}
+
+.writing_header_img {}
+.writing_header_img img{
+	width: 100%;
+}
+.writing_body .writing_date {
+	margin-top: 15px;
+}
+.writing_name {}
+.writing_body .writing_tag {
+	margin: 10px 0;
+}
+.writing_tag_elem {}
+.writing_text {}
+/*Оформляем список страницы*/
+.writing_number {
+	display: flex;
+	justify-content: center;
+}
+.writing_numbeer_elem {
+	margin: 0 1.25vw 51px;
+}
+/*Оформляем seo*/
+.seo {}
+.seo_container {
+	padding: 1.74vw 7vw 2vw;
+}
+.seo_content {
+	max-height: 242px;
+	margin-bottom: 2vw;
+	overflow: hidden;
+}
+.seo_tittle {}
+.seo_text {
+	margin-bottom: 15px;
+}
+.seo_text p{
+	margin-top: 15px;
+}
+.seo_button {
+}
+.seo_elem {}
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
 .sign_container{
 	max-width: 100%; 
+}
+
+}
+@media(max-width: 1200px){
+.writing_header {
+	flex-direction: column;
+}
+.writing_header_image {
+	margin: 0;
+}
+.writing_elem {
+	flex: 1 1 45%;
+	margin-bottom: 3.13vw;
+}
+.writing_elem:nth-child(2), .writing_elem:nth-child(5), .writing_elem:nth-child(8) {
+margin: 0;
+}
+.writing_elem:nth-child(odd){
+	margin-right: 4vw;
+}
+.writing_elem:nth-child(9){
+	display: none;
 }
 }
 @media(max-width: 992px){

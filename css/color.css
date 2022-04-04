@@ -2,11 +2,20 @@
 *{
 	color: rgba(6, 18, 36, 0.9);
 }
-
+.header_status_text{
+	color: #061224;
+}
+.seo_elem{
+color: #1064E5;
+}
 /*Цвет фона/фон*/
 .header_container{
 	background:url(../image/header/header_img.jpg) right top no-repeat,
  url(../image/header/header_bg.png) ;
+}
+/**/
+.blog .header_container{
+	background: none;
 }
 .product_container,
 .document_container,
@@ -22,6 +31,9 @@
 }
 .footer_address, .footer_mail, .footer_container a {
 	color: white;
+}
+.blog .mailing{
+background: #D8F1F0;
 }
 /*Медиазапрос при 992px ширины экрана*/
 @media(max-width: 992px){

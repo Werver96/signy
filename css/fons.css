@@ -9,17 +9,20 @@ body{
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.frame_tittle{
+.frame_tittle,
+.writing_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
 .sign_button,
-.footer_bottom{
+.footer_bottom,
+.header_status_text, .writing_tag_elem{
 	font-size: 12px;
 }
 .header_nav_main,
 .about_date,
-.footer_content {
+.footer_content,
+.writing_date {
 	font-size: 14px;
 }
 .header_main_number, .product_text,
@@ -49,7 +52,9 @@ body{
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.frame_tittle{
+.frame_tittle,
+.writing_tittle, .writing_sumtittle,
+.seo_tittle{
 	font-size: 40px;
 }
 .sign_info span{
@@ -69,11 +74,17 @@ body{
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.footer_content{
+.footer_content,
+.writing_tittle,
+.writing_date,
+.writing_number{
 	font-weight: 500;
 }
 .header_nav_main, 
-.sign_button, .sign_subtittle, .about_subtittle{
+.sign_button, .sign_subtittle,
+.about_subtittle,
+.writing_sumtittle,
+.seo_tittle{
 	font-weight: 600;
 }
 .header_main_subtittle, .sign_info span {
@@ -92,6 +103,7 @@ body{
 .answer_tittle,
 .mailing_content,
 .footer_item,
-.frame_content {
+.frame_content,
+.seo_button{
 	text-align: center;
 }
