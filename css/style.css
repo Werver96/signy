@@ -744,8 +744,17 @@ margin: 0 4vw;
 	letter-spacing: 0.19em;
 	padding: 16px 57px;
 	background: #70a2ef;
-	border: none;
+	border: 1px solid #70a2ef;
 }
+.contacts_form_submit:hover{
+	background: white;
+
+}
+.contacts_form_submit:active{
+	border: 1px solid #0046B0;
+	background: #0046B0;
+}
+
 /*Оформление Страницы ответы и вопросы*/
 .faq {}
 .faq_container {}
