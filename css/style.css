@@ -572,7 +572,7 @@ margin: 0 4vw;
 .writing_body .writing_date {
 	margin-top: 15px;
 }
-.writing_name {}
+.writing_nav_elem {}
 .writing_body .writing_tag {
 	margin: 10px 0;
 }
@@ -651,6 +651,140 @@ margin: 0 4vw;
 .video_main_date {
 	margin-top: 5px;
 }
+/*Оформляем часть "интереное"*/
+.video_writing {
+	margin-bottom: 3.2vw;
+}
+.video_writing_tittle {
+	margin-bottom: 3.5vw;
+}
+.video_writing {
+	padding: 0 7vw;
+}
+.video_writing_tittle {}
+.video_writing_body {
+	display: flex;
+}
+.video_writing_elem {
+	flex: 1 1 25%;
+}
+.video_writing_elem:nth-child(1) {
+	margin-right:2.24vw;
+}
+.video_writing_elem:nth-child(3) {
+	margin-left:2.24vw;
+}
+/*Оформляем страницу контакты*/
+.contacts_container {}
+.contacts_content {
+	padding: 2vw 7vw 3vw;
+}
+.contacts_tittle {
+	margin: 30px 0;
+}
+.contacts_body {
+	display: flex;
+}
+.contacts_info {
+	flex: 1 1 45%;
+}
+.contacts_info_text {
+	line-height: 1.5;
+	max-width: 500px;
+	margin-bottom: 8px;
+	padding-right: 15px;
+}
+.contacts_info_tel {
+	background: url(../image/contacts/phone.svg) no-repeat;
+	padding-left: 40px;
+}
+.contacts_info_tel p{
+	margin-bottom: 8px;
+}
+.contacts_info_mail {
+	margin-bottom: 8px;
+	background: url(../image/contacts/mail.svg) no-repeat;
+	padding-left: 40px;
+}
+.contacts_info_address {
+	padding: 4px 0 8px 40px;
+	background: url(../image/contacts/address.svg) no-repeat;
+	margin-bottom: 16px;
+}
+.contacts_map {
+	flex: 1 1 45%;
+	border-radius: 4px;
+}
+.contacts_map iframe{
+	width: 100%;
+	height: 100%;
+}
+.contacts_form {}
+.contacts_form_text {
+	margin: 22px 0 14px 20px;
+
+}
+.contacts_form_input {
+	width: 420px;
+	padding: 0 20px;
+	height: 50px;
+	border: 1px solid #061224E5;
+	border-radius: 37px;
+}
+.contacts_form_textarea{
+	height: 138px;
+	width: 420px;
+	border: 1px solid #061224E5;
+	padding: 10px 20px;
+	resize: none;
+	border-radius: 8px;
+	margin-bottom: 24px;
+}
+.contacts_form_submit{
+	letter-spacing: 0.19em;
+	padding: 16px 57px;
+	background: #70a2ef;
+	border: none;
+}
+/*Оформление Страницы ответы и вопросы*/
+.faq {}
+.faq_container {}
+.faq_content {
+	padding: 2vw 7vw;
+}
+.faq_tittle {
+	margin-bottom: 2vw;
+}
+.faq_subtittle{}
+.faq_subtittle:before {  
+  content: none;
+}
+details[open] > .faq_subtittle:before {
+  content: none;
+}
+.faq_subtittle:after {  
+  content: " +";
+  margin-right: .3em;
+}
+details[open] > .faq_subtittle:after {
+  content: " –";
+}
+/*Оформляем контакты в вопросах и ответах*/
+.faq_contacts {}
+.faq_contacts_contaiter {
+	padding: 2.2vw 0 90px;
+}
+.faq_contacts_content{
+	max-width: 420px;
+	margin: 0 auto;
+	position: relative;
+}
+.faq_contacts .contacts_form_submit{
+	position: absolute;
+	left: 50%;
+	bottom: -57px;
+	transform: translateX(-50%);
+}
 
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
@@ -679,6 +813,13 @@ margin: 0;
 }
 .writing_elem:nth-child(9){
 	display: none;
+}
+.contacts_body {
+	flex-direction: column;
+}
+.contacts_map iframe{
+	width: 86vw;
+	height: 30vw;
 }
 }
 @media(max-width: 992px){
@@ -719,4 +860,11 @@ margin-top: 3.47vw;
 .friends_container{
 	max-width: auto;
 }
+.video_writing_elem {
+	flex: 1 1 45%;
+}
+.video_writing_elem:nth-child(3) {
+	display: none;
+}
+
 }

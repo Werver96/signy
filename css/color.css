@@ -14,7 +14,9 @@ color: #1064E5;
  url(../image/header/header_bg.png) ;
 }
 /**/
-.blog .header_container, .video .header_container{
+.blog .header_container, 
+.video .header_container,
+.contacts .header_container{
 	background: none;
 }
 .product_container,
@@ -33,7 +35,8 @@ color: #1064E5;
 	color: white;
 }
 .blog .mailing, 
-.video .frame, .video .mailing{
+.video .frame, .video .mailing,
+.faq_contacts{
 background: #D8F1F0;
 }
 

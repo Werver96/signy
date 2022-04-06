@@ -11,7 +11,8 @@ body{
 .mailing_tittle,
 .frame_tittle,
 .writing_tittle,
-.video_header_tittle, .video_name{
+.video_header_tittle, .video_name,
+.contacts_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
@@ -30,7 +31,9 @@ body{
 .header_main_number, .product_text,
 .document_text,
 .answer_elem,
-.mailing_text {
+.mailing_text,
+.contacts_info,
+.contacts_form_text, .contacts_form_input, .contacts_form_textarea {
 	font-size: 18px;
 }
 .sign_info{
@@ -40,7 +43,9 @@ body{
 .motto_slogan_tittle,
 .about_subtittle,
 .mailing_area,
-.video_main_tittle{
+.video_main_tittle,
+.writing_name,
+.faq_subtittle{
 	font-size: 24px;
 }
 .sign_subtittle{
@@ -61,7 +66,9 @@ body{
 .frame_tittle,
 .writing_tittle, .writing_sumtittle,
 .seo_tittle,
-.video_header_tittle, .video_name{
+.video_header_tittle, .video_name, .video_writing_tittle,
+.contacts_tittle,
+.faq_tittle{
 	font-size: 40px;
 }
 .sign_info span{
@@ -83,7 +90,10 @@ body{
 .mailing_tittle,
 .footer_content,
 .writing_tittle, .writing_date, .writing_number,
-.video_header_tittle, .video_header_subtittle, .video_header_date, .video_name{
+.video_header_tittle, .video_header_subtittle, .video_header_date, .video_name, .video_writing_tittle,
+.contacts_tittle,
+.faq_tittle,
+.answer_subtittle{
 	font-weight: 500;
 }
 .header_nav_main, 
@@ -91,7 +101,9 @@ body{
 .about_subtittle,
 .writing_sumtittle,
 .seo_tittle,
-.video_main_tittle{
+.video_main_tittle,
+.writing_name,
+.faq_subtittle{
 	font-weight: 600;
 }
 .header_main_subtittle, .sign_info span {
@@ -112,6 +124,7 @@ body{
 .footer_item,
 .frame_content,
 .seo_button,
-.video_name{
+.video_name,.video_writing_tittle,
+.contacts_tittle, .contacts_subtittle{
 	text-align: center;
 }
