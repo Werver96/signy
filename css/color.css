@@ -16,12 +16,19 @@ color: #1064E5;
 /**/
 .blog .header_container, 
 .video .header_container,
-.contacts .header_container{
+.contacts .header_container,
+.faq .header_container,
+.about .header_container
+{
 	background: none;
 }
 .product_container,
 .document_container,
-.about_container
+.about_container,
+.blog .mailing, 
+.video .frame, .video .mailing,
+.about .frame, .about .mailing,
+.faq_contacts
 {
 	background: #D8F1F0;
 }
@@ -34,11 +41,7 @@ color: #1064E5;
 .footer_address, .footer_mail, .footer_container a {
 	color: white;
 }
-.blog .mailing, 
-.video .frame, .video .mailing,
-.faq_contacts{
-background: #D8F1F0;
-}
+
 
 /*Медиазапрос при 992px ширины экрана*/
 @media(max-width: 992px){

@@ -747,7 +747,7 @@ margin: 0 4vw;
 	border: 1px solid #70a2ef;
 }
 .contacts_form_submit:hover{
-	background: white;
+	background: none;
 
 }
 .contacts_form_submit:active{
@@ -794,7 +794,65 @@ details[open] > .faq_subtittle:after {
 	bottom: -57px;
 	transform: translateX(-50%);
 }
+/*Оформляем страницу "о нас"*/
 
+.aboutus {}
+.aboutus_container {
+	padding: 2.2vw 7vw 90px;
+}
+.aboutus_content {}
+.aboutus_tittle {
+	margin-bottom: 25px;
+}
+.aboutus_image {
+	background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
+	url(../image/about/main.jpg) no-repeat right top;
+	height: 422px;
+}
+.aboutus_text {
+	margin-top: 1.67vw;
+	line-height: 1.5em;
+}
+.aboutus_body {
+	padding: 1.67vw;
+	display: flex;
+}
+.aboutus_img {
+	background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
+	url(../image/about/comment.jpg) no-repeat center center / auto 100%;
+	flex: 0 0 37vw;
+	height: 405px;
+	max-width: 531px;
+	margin-left: 6vw;
+}
+.aboutus_comment {
+	margin-left: 7vw;
+	max-width: 418px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	line-height: 1.5em;
+}
+.aboutus_comment_text {}
+.aboutus_comment_autor {
+	text-align: right;
+}
+.friends {}
+.friends_container {}
+.friends_content {}
+.friends_tittle {}
+.friends_logo {}
+.friends_elem {}
+.friends_input {}
+.aboutus_signature {
+	margin-top: 24px;
+	text-align: center;
+}
+.aboutus_signature img{
+	width: 24vw;
+	max-width: 242px;
+
+}
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
@@ -875,5 +933,16 @@ margin-top: 3.47vw;
 .video_writing_elem:nth-child(3) {
 	display: none;
 }
+.aboutus_body {
+	padding: 1.67vw 0;
 
+}
+.aboutus_img {
+	flex: 0 0 50vw;
+	height: 405px;
+	margin-left: 0;
+}
+.aboutus_comment {
+	margin-left: 2.6vw;
+}
 }
