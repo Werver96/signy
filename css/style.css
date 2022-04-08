@@ -45,10 +45,10 @@
 /* Оформление header*/
 
 .header_container {
-	padding: 40px 7vw 0;
+	padding: 20px 7vw 0;
 }
 .main .header_container {
-	padding: 40px 7vw;
+	padding: 20px 7vw;
 }
 .header_contant {}
 .header_img{}
@@ -68,24 +68,40 @@
 .header_nav_list {
 	position: relative;
 	display: inline-block;
-	margin: 0 1vw;
+	padding: 19px 0;
+	letter-spacing: 1.8px;
 }
-.header_nav_list:nth-child(6){
-	margin: 9.5px 0.5vw;
+.header_nav_list:nth-child(6), .header_nav_list:nth-child(5){
+	margin: 0 0.26vw;
 }
 
 
 .header_nav_link {}
+.header_nav_link{
+	padding: 17px;
+}
+.header_nav_link:hover{
+	background: #E2EDFB;
+}
+.header_nav_link_open:after{
+	content: url(../image/header/menu_open.svg);
+	position: relative;
+	left: 5px;
+	bottom: 3px;
+}
 /*Настраиваем "хлебные крошки"*/
 .header_status {}
 .header_status_text {
-	margin-top: 3.52vw;
+	display: inline-block;
+	margin-top: 2.08vw;
 	opacity: 0.6;
 }
 /*Оформляем выпадающее меню*/
 .header_nav_list ul{
 	position: absolute;
 	display: none;
+	top:52px;
+	background: white;
 }
 .header_nav_list:hover .header_nav_sublink {
 	display: block;
@@ -93,8 +109,9 @@
 .header_nav_sublink a{
 	display: block;
 }
-
-
+.header_nav_sublink_first a{
+	padding-right: 27px;
+}
 .header_main {
 
 }
@@ -885,6 +902,9 @@ details[open] > .faq_subtittle:after {
 
 }
 @media(max-width: 1200px){
+.header_nav_main {
+	display: none;
+}
 .writing_header {
 	flex-direction: column;
 }
@@ -915,9 +935,7 @@ margin: 0;
 }
 @media(max-width: 992px){
 /*Скрываем меню */
-.header_nav_main {
-	display: none;
-}
+
 /*Делаем изображение pruduct широкой, элементы сами становяться в одну колону*/
 .product_img {
 	width: 85vw;
