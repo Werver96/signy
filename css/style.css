@@ -853,12 +853,35 @@ details[open] > .faq_subtittle:after {
 	max-width: 242px;
 
 }
+/*Оформляем  страничку ошибки*/
+.fault {}
+.fault_container {
+	background: url(../image/error/error-bg.jpg) no-repeat center center / 100% 100%;
+}
+.fault_content {
+	padding: 4vw 0 30px;
+}
+.fault_img {
+	margin-bottom: 25px;
+}
+.fault_text {
+	width: 550px;
+	margin: 0 auto 20px;
+	line-height: 1.2em;
+}
+.fault_button {
+	padding: 13px 32px;
+	border: 1px solid white;
+	width: 178px;
+	margin: 0 auto;
+	border-radius: 43px;
+	color: white;
+	letter-spacing: 2px;
+
+}
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
-.sign_container{
-	max-width: 100%; 
-}
 
 }
 @media(max-width: 1200px){
@@ -888,6 +911,7 @@ margin: 0;
 	width: 86vw;
 	height: 30vw;
 }
+
 }
 @media(max-width: 992px){
 /*Скрываем меню */

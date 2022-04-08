@@ -26,7 +26,8 @@ body{
 .about_date,
 .footer_content,
 .writing_date,
-.video_header_date {
+.video_header_date,
+.fault_button{
 	font-size: 14px;
 }
 .header_main_number, .product_text,
@@ -48,7 +49,8 @@ body{
 .mailing_area,
 .video_main_tittle,
 .writing_name,
-.faq_subtittle{
+.faq_subtittle,
+.fault_text{
 	font-size: 24px;
 }
 .sign_subtittle{
@@ -99,7 +101,8 @@ body{
 .faq_tittle,
 .answer_subtittle,
 .aboutus_tittle,
-.aboutus_comment_autor span{
+.aboutus_comment_autor span,
+.fault_button{
 	font-weight: 500;
 }
 .header_nav_main, 
@@ -131,6 +134,7 @@ body{
 .frame_content,
 .seo_button,
 .video_name,.video_writing_tittle,
-.contacts_tittle, .contacts_subtittle{
+.contacts_tittle, .contacts_subtittle,
+.fault_content{
 	text-align: center;
 }

@@ -18,7 +18,8 @@ color: #1064E5;
 .video .header_container,
 .contacts .header_container,
 .faq .header_container,
-.about .header_container
+.about .header_container,
+.error .header_container
 {
 	background: none;
 }
@@ -38,7 +39,8 @@ color: #1064E5;
 .footer_container {
 	background: #061224;
 }
-.footer_address, .footer_mail, .footer_container a {
+.footer_address, .footer_mail, .footer_container a, 
+.fault_text {
 	color: white;
 }
 
