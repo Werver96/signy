@@ -896,6 +896,42 @@ details[open] > .faq_subtittle:after {
 	letter-spacing: 2px;
 
 }
+/*Оформляем посты*/
+.post {}
+.post_container {}
+.post_content {}
+.post_tittle {
+	margin-bottom: 30px;
+}
+.post_date{
+	margin-bottom: 30px;
+}
+.post-1 {}
+.post-1_container {}
+.post-1_content {
+	padding: 2vw 7vw 3vw;
+}
+.post-1_tittle {}
+.post-1_date {}
+.post-1_body {
+	display: flex;
+	justify-content: space-between;
+}
+.post-1_left {
+	flex: 0 0 41vw;
+}
+.post-1_text {
+	text-align: justify;
+	line-height: 1.19em;
+	margin-bottom: 20px;
+}
+.post-1_subtittle {
+	margin-bottom: 20px;
+}
+.post-1_list {}
+.post-1_right {
+	flex: 0 0 41vw;
+}
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
@@ -931,7 +967,14 @@ margin: 0;
 	width: 86vw;
 	height: 30vw;
 }
-
+.post-1_body{
+	flex-wrap: wrap;
+}
+.post-1_left {
+	flex: 0 0 84vw;
+}.post-1_right {
+	flex: 0 0 84vw;
+}
 }
 @media(max-width: 992px){
 /*Скрываем меню */

@@ -13,7 +13,8 @@ body{
 .writing_tittle,
 .video_header_tittle, .video_name,
 .contacts_tittle,
-.aboutus_tittle{
+.aboutus_tittle,
+.post_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
@@ -27,7 +28,8 @@ body{
 .footer_content,
 .writing_date,
 .video_header_date,
-.fault_button{
+.fault_button,
+.post_date{
 	font-size: 14px;
 }
 .header_main_number, .product_text,
@@ -56,7 +58,8 @@ body{
 .sign_subtittle{
 	font-size: 28px;
 }
-.video_header_subtittle{
+.video_header_subtittle,
+.post-1_subtittle{
 	font-size: 36px;
 }
 .header_main_tittle, 
@@ -74,7 +77,8 @@ body{
 .video_header_tittle, .video_name, .video_writing_tittle,
 .contacts_tittle,
 .faq_tittle,
-.aboutus_tittle{
+.aboutus_tittle,
+.post_tittle{
 	font-size: 40px;
 }
 .sign_info span{
@@ -102,7 +106,8 @@ body{
 .answer_subtittle,
 .aboutus_tittle,
 .aboutus_comment_autor span,
-.fault_button{
+.fault_button,
+.post_tittle{
 	font-weight: 500;
 }
 .header_nav_main, 

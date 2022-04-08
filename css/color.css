@@ -29,7 +29,8 @@ color: #1064E5;
 .blog .mailing, 
 .video .frame, .video .mailing,
 .about .frame, .about .mailing,
-.faq_contacts
+.faq_contacts,
+.blog .frame
 {
 	background: #D8F1F0;
 }
