@@ -359,34 +359,6 @@
 .answer_tittle {
 	margin-bottom: 40px;
 }
-/*.answer_list {}
-.answer_question {}
-.answer_radio {}
-input.answer_radio{
-	display: none;
-}
-input.answer_radio + label + div{
-	display: none;
-}
-input.answer_radio:checked + label + div{
-	display: block;
-}
-input.answer_radio + label{
-	text-decoration: underline;
-	cursor: pointer;
-}
-input.answer_radio:checked + label{
-	display: none;
-}
-input.answer_radio + label + div + input + label{
-	display: none;
-	text-decoration: underline;
-	cursor: pointer;
-}
-input.answer_radio:checked + label + div + input + label{
-	display: block;
-}*/
-
 .answer_text {
 	max-width: 550px;
 	margin: 0 auto;
@@ -472,7 +444,7 @@ details{
 .footer_logo {
 	margin-right: 6.77vw;
 }
-.footer_logo a, {
+.footer_logo a {
 	display: block;
 }
 .footer_nav {
@@ -1021,7 +993,7 @@ margin: 0;
 margin-top: 3.47vw;
 }
 .friends_container{
-	max-width: auto;
+	max-width: none;
 }
 .video_writing_elem {
 	flex: 1 1 45%;
