@@ -39,7 +39,8 @@ body{
 .contacts_info,
 .contacts_form_text, .contacts_form_input, .contacts_form_textarea,
 .aboutus_text,
-.aboutus_comment {
+.aboutus_comment,
+.post-1_text {
 	font-size: 18px;
 }
 .sign_info{
