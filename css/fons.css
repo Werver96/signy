@@ -144,3 +144,79 @@ body{
 .fault_content{
 	text-align: center;
 }
+
+@media(max-width: 768px){
+.product_text,
+.answer_text,
+.mailing_text{
+	font-size: 16px;
+}
+.header_main_tittle, 
+.product_tittle, 
+.sign_tittle,
+.document_subtittle,
+.friends_tittle,
+.about_tittle,
+.acq_tittle,
+.answer_tittle,
+.mailing_tittle,
+.frame_tittle,
+.writing_tittle, .writing_sumtittle,
+.seo_tittle,
+.video_header_tittle, .video_name, .video_writing_tittle,
+.contacts_tittle,
+.faq_tittle,
+.aboutus_tittle,
+.post_tittle{
+	font-size: 36px;
+}
+.motto_slogan_tittle,
+.about_subtittle{
+	font-size: 20px;
+}
+.document_tittle{
+	font-size: 56px;
+}
+}
+@media(max-width: 576px){
+.product_button{
+	font-size: 12px;
+}
+.product_text,
+.answer_text,
+.mailing_text,
+.document_text{
+	font-size: 14px;
+}
+.header_main_subtittle{
+	font-size: 18px;
+}
+.sign_tittle{
+	font-size: 20px;
+}
+.header_main_tittle, 
+.product_tittle, 
+.document_subtittle,
+.friends_tittle,
+.about_tittle,
+.acq_tittle,
+.answer_tittle,
+.mailing_tittle,
+.frame_tittle,
+.writing_tittle, .writing_sumtittle,
+.seo_tittle,
+.video_header_tittle, .video_name, .video_writing_tittle,
+.contacts_tittle,
+.faq_tittle,
+.aboutus_tittle,
+.post_tittle{
+	font-size: 25px;
+}
+.motto_slogan_tittle,
+.about_subtittle{
+	font-size: 20px;
+}
+.document_tittle{
+	font-size: 36px;
+}
+}

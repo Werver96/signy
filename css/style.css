@@ -2,6 +2,9 @@
 @import url(reset.css);
 @import url(fons.css);
 @import url(color.css);
+/*Свойства по медиазапросам*/
+
+
 .main {}
 .wrapper {}
 .container{}
@@ -146,9 +149,10 @@
 .header_button {
 	margin-top: 50px;
 }
+/*
 .header_button_link{
 	padding: 18px 32px;
-}
+}*/
 .button_full {}
 .header_input {
 	text-align: center;
@@ -281,7 +285,11 @@
 .document_subtittle {
 	padding-bottom: 15px;
 }
-.document_text {}
+.document_text {
+	max-width: 480px;
+	margin: 0 auto;
+	padding:0 20px;
+}
 /*Оформляем блок партнеров/коллег*/
 .friends {}
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
@@ -354,7 +362,7 @@
 .answer_content {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 45px 0;
+	padding: 45px 7px;
 }
 .answer_tittle {
 	margin-bottom: 40px;
@@ -401,7 +409,7 @@ details{
 .mailing {}
 .mailing_container {}
 .mailing_content {
-	padding: 60px 0 100px;
+	padding: 60px 0 7vw;
 }
 .mailing_tittle {}
 .mailing_text {
@@ -958,6 +966,7 @@ margin: 0;
 .writing_header_img img{
 	height: 25vw;
 }
+
 }
 @media(max-width: 992px){
 /*Скрываем меню */
@@ -1013,4 +1022,148 @@ margin-top: 3.47vw;
 .aboutus_comment {
 	margin-left: 2.6vw;
 }
+.header_input{
+	margin-top: 7vw;
+}
+.about_elem_3{
+	display: none;
+}
+.about_subtittle{
+	padding: 0;
+}
+}
+@media(max-width: 768px){
+	.header_container{
+background: url(../image/header/header_man.png) right -98px top -23px / 375px  no-repeat , 
+ linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
+ url(../image/header/header_bg.png);
+}
+.motto_slogans{
+	flex-direction: column;
+	align-items: center;
+}
+.motto_slogan{
+	margin: 2vw auto;
+}
+.motto_slogan_text{
+	width: 200px;
+	margin-top: 1vw;
+}
+
+/*Временные эжлементы*/
+.friends_logo{
+	flex-wrap: wrap;
+}
+.friends_elem {
+	margin: 0;
+	flex: 0 0 45vw;
+	margin-top: 3vw;
+}
+.acq_video iframe{
+	width: 90vw;
+	height: 60vw;
+}
+.mailing_box{
+	flex-wrap: wrap;
+}
+.sign_tittle{
+	margin: 3vw 0;
+}
+.acq_content {
+	padding: 4vw 0;
+}
+.footer_logo img{
+	width: 14vw;
+}
+}
+
+@media(max-width: 576px){
+	.header_container{
+background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-repeat , 
+ linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
+ url(../image/header/header_bg.png);
+}
+.header_main_text{
+	width: 63%;
+}
+/* Обычное поведение кнопок*/
+.button_blank, .button_blank_mob{
+	padding: 14px 58px;
+}
+.button_full, .button_full_mob{
+	padding: 14px 58px;
+}
+.about_body{
+	flex-wrap: wrap;
+}
+.about_elem{
+	flex: 1 1 374px;
+	margin: 0 6vw;
+}
+.mailing_elem{
+	flex: 1 1 100vw;
+	margin: 23px 0 0 0;
+}
+.mailing_area{
+	width: 65vw;
+}
+.mailing_text {
+	margin-top: 20px;
+}
+.mailing_content{
+	padding: 50px 16px 25px;
+}
+.footer_logo img{
+	width: 14vw;
+	min-width: 90px;
+	margin-bottom: 30px;
+}
+.footer_content{
+	flex-direction: column;
+}
+.footer_left_body{
+	flex-direction: column;
+}
+.footer_left{
+	flex: 1 1 27vw;
+}
+
+.footer_component{
+	margin-left: 25px;
+	margin-bottom: 30px;
+}
+}
+
+@media(max-width: 425px){
+	.header_container{
+background: url(../image/header/header_man.png) right -95px top 15px / 243px  no-repeat , 
+ url(../image/header/header_bg.png);
+}
+.header_button{
+	text-align: center;
+}
+.header_button_link{
+	font-size: 12px;
+	padding: 14px 32px;
+}
+.header_button{
+	margin-top: 6vw;
+}
+.product_button{
+	text-align: center;
+}
+.sign_container{
+	max-width: 100%;
+}
+.mailing_area{
+	width: 85vw;
+}
+}
+@media(max-width: 375px){
+.friends_logo{
+	padding: 0 25px;
+}
+}
+@media(max-width: 320px){
+
 }

@@ -10,7 +10,7 @@ color: #1064E5;
 }
 /*Цвет фона/фон*/
 .header_container{
-	background:url(../image/header/header_man.png) right center / 375px  no-repeat , 
+	background:url(../image/header/header_man.png) right -15px center / 375px  no-repeat , 
 	linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
 	url(../image/header/header_bg.png);
 }

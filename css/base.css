@@ -1,0 +1,107 @@
+@media(max-width: 1440px){
+/* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
+ при большой ширине экрана*/
+
+}
+@media(max-width: 1200px){
+.header_nav_main {
+	display: none;
+}
+.writing_header {
+	flex-direction: column;
+}
+.writing_header_image {
+	margin: 0;
+}
+.writing_elem {
+	flex: 1 1 45%;
+	margin-bottom: 3.13vw;
+}
+.writing_elem:nth-child(2), .writing_elem:nth-child(5), .writing_elem:nth-child(8) {
+margin: 0;
+}
+.writing_elem:nth-child(odd){
+	margin-right: 4vw;
+}
+.writing_elem:nth-child(9){
+	display: none;
+}
+.contacts_body {
+	flex-direction: column;
+}
+.contacts_map iframe{
+	width: 86vw;
+	height: 30vw;
+}
+.post-1_body{
+	flex-wrap: wrap;
+}
+.post-1_left {
+	flex: 0 0 84vw;
+}.post-1_right {
+	flex: 0 0 84vw;
+}
+.writing_header_img img{
+	height: 25vw;
+}
+}
+@media(max-width: 992px){
+/*Скрываем меню */
+
+/*Делаем изображение pruduct широкой, элементы сами становяться в одну колону*/
+.product_img {
+	width: 85vw;
+}
+/*Выставляем последовательность элементов produkt*/
+.product_elem_1{
+	order: 1;
+}
+.product_elem_2{
+	order: 2;
+}
+.product_elem_3{
+	order: 4;
+}
+.product_elem_4{
+	padding-left:15px;
+	order: 3;
+}
+/*Задаем максимальные размеры контейнеру для того чтобы элементы перенеслись 
+в 2 колоны*/
+.sign_container{
+	max-width: 76%;
+	margin: 0 auto;
+}
+.sign_body{
+	flex-wrap: wrap;
+}
+.sign_elem{
+margin-top: 3.47vw;
+}
+.friends_container{
+	max-width: none;
+}
+.video_writing_elem {
+	flex: 1 1 45%;
+}
+.video_writing_elem:nth-child(3) {
+	display: none;
+}
+.aboutus_body {
+	padding: 1.67vw 0;
+
+}
+.aboutus_img {
+	flex: 0 0 50vw;
+	height: 405px;
+	margin-left: 0;
+}
+.aboutus_comment {
+	margin-left: 2.6vw;
+}
+}
+@media(max-width: 768px){
+.product_elem_4{
+	padding-left:0;
+}
+}
