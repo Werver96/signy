@@ -150,6 +150,9 @@ summary {
 }
 
 @media(max-width: 768px){
+.writing_body .writing_tag_elem{
+	font-size: 10px;
+}
 .product_text,
 .answer_text,
 .mailing_text,
@@ -191,7 +194,11 @@ summary {
 }
 }
 @media(max-width: 576px){
-.product_button{
+.writing_tag_elem{
+	font-size: 10px;
+}
+.product_button,
+.writing_date{
 	font-size: 12px;
 }
 .product_text,
@@ -201,20 +208,25 @@ summary {
 .contacts_subtittle,
 .contacts_form_text,
 .contacts_info,
-.contacts_form_input{
+.contacts_form_input,
+.writing_text,
+.writing_nav{
 	font-size: 14px;
 }
 .about_subtittle,
 .video_main_tittle, 
 .video_header_subtittle,
-.fault_text{
+.fault_text,
+.writing_name{
 	font-size: 16px;
 }
 .header_main_subtittle{
 	font-size: 18px;
 }
 .sign_tittle,
-.contacts_tittle{
+.contacts_tittle,
+.writing_tittle,
+.writing_sumtittle{
 	font-size: 20px;
 }
 .header_main_tittle, 
@@ -226,7 +238,6 @@ summary {
 .answer_tittle,
 .mailing_tittle,
 .frame_tittle,
-.writing_tittle, .writing_sumtittle,
 .seo_tittle,
 .video_header_tittle, .video_name, .video_writing_tittle,
 .faq_tittle,
