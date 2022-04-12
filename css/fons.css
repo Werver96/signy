@@ -188,6 +188,9 @@ body{
 .document_text{
 	font-size: 14px;
 }
+.about_subtittle{
+	font-size: 16px;
+}
 .header_main_subtittle{
 	font-size: 18px;
 }
@@ -213,7 +216,7 @@ body{
 	font-size: 25px;
 }
 .motto_slogan_tittle,
-.about_subtittle{
+{
 	font-size: 20px;
 }
 .document_tittle{

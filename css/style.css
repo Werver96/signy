@@ -362,7 +362,7 @@
 .answer_content {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 45px 7px;
+	padding: 45px 16px;
 }
 .answer_tittle {
 	margin-bottom: 40px;
@@ -1012,7 +1012,9 @@ margin-top: 3.47vw;
 }
 .aboutus_body {
 	padding: 1.67vw 0;
-
+}
+.about_date{
+	padding: 0;
 }
 .aboutus_img {
 	flex: 0 0 50vw;
@@ -1057,7 +1059,7 @@ background: url(../image/header/header_man.png) right -98px top -23px / 375px  n
 .friends_elem {
 	margin: 0;
 	flex: 0 0 45vw;
-	margin-top: 3vw;
+	margin-top: 6vw;
 }
 .acq_video iframe{
 	width: 90vw;
@@ -1093,12 +1095,18 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 .button_full, .button_full_mob{
 	padding: 14px 58px;
 }
+.acq_tittle{
+	margin-bottom: 6.25vw;
+}
 .about_body{
 	flex-wrap: wrap;
 }
 .about_elem{
 	flex: 1 1 374px;
-	margin: 0 6vw;
+	margin: 3.75vw 6vw;
+}
+.about_date{
+	margin: 2vw 0;
 }
 .mailing_elem{
 	flex: 1 1 100vw;
