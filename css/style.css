@@ -852,6 +852,7 @@ details[open] > .faq_subtittle:after {
 .aboutus_signature img{
 	width: 24vw;
 	max-width: 242px;
+	min-width: 188px;
 
 }
 /*Оформляем  страничку ошибки*/
@@ -926,7 +927,10 @@ details[open] > .faq_subtittle:after {
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
-
+/*Адаптив для страницы about.html*/
+.aboutus_text{
+	text-align: justify;
+}
 }
 @media(max-width: 1200px){
 .header_nav_main {
@@ -966,6 +970,8 @@ details[open] > .faq_subtittle:after {
 .writing_elem:last-child{
 	display: none;
 }
+/*Адаптив для страницы about.html*/
+
 }
 @media(max-width: 992px){
 /*Скрываем меню */
@@ -1040,6 +1046,13 @@ margin-top: 3.47vw;
 .video_writing img{
 	height: 33vw;
 }
+/*Адаптив для страницы about.html*/
+.aboutus_image{
+	background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
+	url(../image/about/main_midle.jpg) no-repeat right top / 100%;
+	height: 55vw;
+}
+
 }
 @media(max-width: 768px){
 	.header_container{
@@ -1099,6 +1112,14 @@ background: url(../image/header/header_man.png) right -98px top -23px / 375px  n
 .writing_body .writing_text{
 	text-align: justify;
 }
+/*Адаптив для страницы about.html*/
+.aboutus_img{
+	height: 60vw;
+}
+.aboutus_container{
+	padding: 2.2vw 7vw 7vw;
+}
+
 }
 
 @media(max-width: 576px){
@@ -1223,6 +1244,25 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 .writing_elem img{
 	height: 45vw;
 }
+/*Адаптив для страницы about.html*/
+.aboutus_body {
+	flex-direction: column;
+}
+.aboutus_img {
+	background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%),
+	url(../image/about/comment.jpg) no-repeat center center / 100% 100%;
+	margin: 0;
+	flex: 0 0 50vw;
+	height: 405px;
+	max-width: 531px;
+}
+.aboutus_comment_autor {
+	margin: 0 7vw;
+}
+.aboutus_comment_text {
+	padding: 15px;
+	max-width: 70vw;
+}
 }
 @media(max-width: 425px){
 /*Адаптив для страницы video.html*/
@@ -1268,6 +1308,11 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 }
 /*Адаптив для страницы video.html*/
 
+/*Адаптив для страницы about.html*/
+.aboutus_comment_text {
+	padding: 8px;
+	max-width: 71vw;
+}
 }
 @media(max-width: 320px){
 /*Адаптив для страницы video.html*/
