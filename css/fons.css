@@ -28,6 +28,7 @@ body{
 .footer_content,
 .writing_date,
 .video_header_date,
+.video_main_date,
 .fault_button,
 .post_date{
 	font-size: 14px;
@@ -148,8 +149,20 @@ body{
 @media(max-width: 768px){
 .product_text,
 .answer_text,
-.mailing_text{
+.mailing_text,
+.about_text{
 	font-size: 16px;
+}
+.motto_slogan_tittle,
+.about_subtittle,
+.video_header_subtittle,
+.video_main_tittle,
+.video_writing_elem .writing_name
+{
+	font-size: 20px;
+}
+.video_header_tittle{
+	font-size: 34px;
 }
 .header_main_tittle, 
 .product_tittle, 
@@ -163,17 +176,14 @@ body{
 .frame_tittle,
 .writing_tittle, .writing_sumtittle,
 .seo_tittle,
-.video_header_tittle, .video_name, .video_writing_tittle,
+.video_name, .video_writing_tittle,
 .contacts_tittle,
 .faq_tittle,
 .aboutus_tittle,
 .post_tittle{
 	font-size: 36px;
 }
-.motto_slogan_tittle,
-.about_subtittle{
-	font-size: 20px;
-}
+
 .document_tittle{
 	font-size: 56px;
 }
@@ -188,7 +198,9 @@ body{
 .document_text{
 	font-size: 14px;
 }
-.about_subtittle{
+.about_subtittle,
+.video_main_tittle, 
+.video_header_subtittle{
 	font-size: 16px;
 }
 .header_main_subtittle{
@@ -221,5 +233,10 @@ body{
 }
 .document_tittle{
 	font-size: 36px;
+}
+}
+@media(max-width: 320px){
+.video_writing .about_tittle{
+	font-size: 20px;
 }
 }

@@ -621,6 +621,9 @@ margin: 0 4vw;
 .video_header_subtittle {
 	margin-bottom: 6px;
 }
+.video_header_smalltext{
+	display: none;
+}
 .video_header_date {
 	margin-bottom: 12px;
 }
@@ -654,25 +657,25 @@ margin: 0 4vw;
 .video_writing {
 	margin-bottom: 3.2vw;
 }
-.video_writing_tittle {
-	margin-bottom: 3.5vw;
+.video_writing .about_body{
+	justify-content: space-around;
 }
-.video_writing {
-	padding: 0 7vw;
+.video_writing .about_elem{
+	flex: 0 1 30vw;
 }
-.video_writing_tittle {}
-.video_writing_body {
-	display: flex;
+.video_writing .about_date,
+.video_writing .about_subtittle {
+	padding: 0;
 }
-.video_writing_elem {
-	flex: 1 1 25%;
+.video_writing .about_text{
+	margin-top: 10px;
+	line-height: 1.2em;
+	text-align: justify;
 }
-.video_writing_elem:nth-child(1) {
-	margin-right:2.24vw;
+.video_writing img{
+	height: 20vw;
 }
-.video_writing_elem:nth-child(3) {
-	margin-left:2.24vw;
-}
+
 /*Оформляем страницу контакты*/
 .contacts_container {}
 .contacts_content {
@@ -1033,6 +1036,14 @@ margin-top: 3.47vw;
 .about_subtittle{
 	padding: 0;
 }
+/*Адаптив для страницы video.html*/
+
+.video_writing .about_elem{
+	flex: 0 1 45vw;
+}
+.video_writing img{
+	height: 33vw;
+}
 }
 @media(max-width: 768px){
 	.header_container{
@@ -1051,7 +1062,6 @@ background: url(../image/header/header_man.png) right -98px top -23px / 375px  n
 	width: 200px;
 	margin-top: 1vw;
 }
-
 /*Временные эжлементы*/
 .friends_logo{
 	flex-wrap: wrap;
@@ -1077,6 +1087,15 @@ background: url(../image/header/header_man.png) right -98px top -23px / 375px  n
 .footer_logo img{
 	width: 14vw;
 }
+/*Адаптив для страницы video.html*/
+.video_container {
+	padding: 1.74vw 6vw 3vw;
+}
+.video_main_video iframe{
+	width: 42vw;
+	height: 24vw;
+}
+
 }
 
 @media(max-width: 576px){
@@ -1135,14 +1154,38 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 .footer_left{
 	flex: 1 1 27vw;
 }
-
 .footer_component{
 	margin-left: 25px;
 	margin-bottom: 30px;
 }
+/*Адаптив для страницы video.html*/
+.video_elem {
+	flex: 0 1 100%;
+	margin-bottom: 3.5vw;
+}
+.video_main_video iframe{
+	width: 100%;
+	height: 48vw;
+}
+.video_header_bigtext{
+	display: none;
+}
+.video_header_smalltext{
+	display: block;
+}
+.video_writing .about_elem{
+	flex: 1 1 374px;
+	margin: 3.75vw 6vw;
+}
+.video_writing img{
+	height: 55vw;
+}
+.video_writing .about_content{
+	padding: 2vw 0;
 }
 
 @media(max-width: 425px){
+/*Адаптив для страницы video.html*/
 	.header_container{
 background: url(../image/header/header_man.png) right -95px top 15px / 243px  no-repeat , 
  url(../image/header/header_bg.png);
@@ -1171,7 +1214,9 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 .friends_logo{
 	padding: 0 25px;
 }
+/*Адаптив для страницы video.html*/
 }
 @media(max-width: 320px){
+/*Адаптив для страницы video.html*/
 
 }
