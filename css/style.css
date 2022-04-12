@@ -1208,6 +1208,9 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 .fault_text{
 	width: 100%;
 }
+.contacts_tittle{
+	margin: 4vw 0;
+}
 }
 @media(max-width: 425px){
 /*Адаптив для страницы video.html*/
@@ -1233,6 +1236,13 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 }
 .mailing_area{
 	width: 85vw;
+}
+/*Адаптив для страницы error*/
+.contacts_form_submit_body{
+	text-align: center;
+}
+.contacts_map iframe{
+	height: 50vw;
 }
 }
 @media(max-width: 375px){

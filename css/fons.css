@@ -199,7 +199,9 @@ summary {
 .mailing_text,
 .document_text,
 .contacts_subtittle,
-.contacts_form_text{
+.contacts_form_text,
+.contacts_info,
+.contacts_form_input{
 	font-size: 14px;
 }
 .about_subtittle,
