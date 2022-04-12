@@ -204,7 +204,8 @@ summary {
 }
 .about_subtittle,
 .video_main_tittle, 
-.video_header_subtittle{
+.video_header_subtittle,
+.fault_text{
 	font-size: 16px;
 }
 .header_main_subtittle{

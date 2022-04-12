@@ -870,6 +870,7 @@ details[open] > .faq_subtittle:after {
 	width: 550px;
 	margin: 0 auto 20px;
 	line-height: 1.2em;
+	padding: 0 16px;
 }
 .fault_button {
 	padding: 13px 32px;
@@ -1198,6 +1199,13 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 	width: 100%;
 }
 .contacts_form_textarea{
+	width: 100%;
+}
+/*Адаптив для страницы error*/
+.fault_img img{
+	width: 85vw;
+}
+.fault_text{
 	width: 100%;
 }
 }
