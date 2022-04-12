@@ -1052,8 +1052,12 @@ margin-top: 3.47vw;
 	url(../image/about/main_midle.jpg) no-repeat right top / 100%;
 	height: 55vw;
 }
-
+.post_tittle,
+.post_date {
+	margin-bottom: 2vw;
 }
+}
+
 @media(max-width: 768px){
 	.header_container{
 background: url(../image/header/header_man.png) right -98px top -23px / 375px  no-repeat , 
@@ -1262,6 +1266,12 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 .aboutus_comment_text {
 	padding: 15px;
 	max-width: 70vw;
+}
+.header_status{
+	overflow: hidden;
+}
+.header_status_text{
+	white-space: nowrap;
 }
 }
 @media(max-width: 425px){
