@@ -18,6 +18,9 @@ body{
 	font-family: 'IBM Plex Serif', serif;
 }
 /*Размеры шрифтов*/
+summary {
+	font-size:1.125em;
+}
 .sign_button,
 .footer_bottom,
 .header_status_text, .writing_tag_elem{
@@ -157,8 +160,8 @@ body{
 .about_subtittle,
 .video_header_subtittle,
 .video_main_tittle,
-.video_writing_elem .writing_name
-{
+.video_writing_elem .writing_name,
+.faq_tittle{
 	font-size: 20px;
 }
 .video_header_tittle{
@@ -178,7 +181,6 @@ body{
 .seo_tittle,
 .video_name, .video_writing_tittle,
 .contacts_tittle,
-.faq_tittle,
 .aboutus_tittle,
 .post_tittle{
 	font-size: 36px;
@@ -195,7 +197,9 @@ body{
 .product_text,
 .answer_text,
 .mailing_text,
-.document_text{
+.document_text,
+.contacts_subtittle,
+.contacts_form_text{
 	font-size: 14px;
 }
 .about_subtittle,
@@ -206,7 +210,8 @@ body{
 .header_main_subtittle{
 	font-size: 18px;
 }
-.sign_tittle{
+.sign_tittle,
+.contacts_tittle{
 	font-size: 20px;
 }
 .header_main_tittle, 
@@ -221,7 +226,6 @@ body{
 .writing_tittle, .writing_sumtittle,
 .seo_tittle,
 .video_header_tittle, .video_name, .video_writing_tittle,
-.contacts_tittle,
 .faq_tittle,
 .aboutus_tittle,
 .post_tittle{
@@ -235,8 +239,13 @@ body{
 	font-size: 36px;
 }
 }
-@media(max-width: 320px){
-.video_writing .about_tittle{
-	font-size: 20px;
+@media(max-width: 375px){
+.faq_tittle{
+	font-size: 16px;
+}
+.video_writing .about_tittle,
+.faq_subtittle,
+summary{
+	font-size: 17px;
 }
 }

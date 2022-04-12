@@ -1183,7 +1183,24 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 .video_writing .about_content{
 	padding: 2vw 0;
 }
-
+/*Адаптив для страницы faq.html*/
+.faq_contacts_content{
+	width: 84vw;
+}
+.contacts_tittle {
+	padding:0 16px;
+}
+.contacts_subtittle {
+	padding: 0 16px;
+}
+.contacts_form_input{
+	height: 42px;
+	width: 100%;
+}
+.contacts_form_textarea{
+	width: 100%;
+}
+}
 @media(max-width: 425px){
 /*Адаптив для страницы video.html*/
 	.header_container{
@@ -1215,6 +1232,7 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 	padding: 0 25px;
 }
 /*Адаптив для страницы video.html*/
+
 }
 @media(max-width: 320px){
 /*Адаптив для страницы video.html*/
