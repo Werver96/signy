@@ -66,6 +66,9 @@
 .header_nav_logo a{
 	display: block;
 }
+.menu_icon {
+	display: none;
+}
 .header_nav_main {}
 .header_nav_lists {}
 .header_nav_list {
@@ -100,14 +103,40 @@
 	opacity: 0.6;
 }
 /*Оформляем выпадающее меню*/
-.header_nav_list ul{
+.header_nav_list .header_nav_sublink{
 	position: absolute;
 	display: none;
 	top:52px;
 	background: white;
 }
-.header_nav_list:hover .header_nav_sublink {
+body._pc .header_nav_list:hover .header_nav_sublink {
 	display: block;
+}
+.menu_arrow{
+	display: block;
+}
+body._touch .header_nav_link_open:after{
+	content: none;
+}
+body._touch .header_nav_list._active .header_nav_sublink {
+	display: block;
+	z-index: 5;
+}
+
+body._touch .menu_arrow{
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #061224;
+	transition: transform 0.3s ease 0s;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+body._touch .header_nav_list._active .menu_arrow {
+	transform: rotate(-180deg);
 }
 .header_nav_sublink a{
 	display: block;
@@ -933,9 +962,77 @@ details[open] > .faq_subtittle:after {
 }
 }
 @media(max-width: 1200px){
-.header_nav_main {
-	display: none;
+/*Делаем меню бургер*/
+.header_nav_lists{
+	display: flex;
+	flex-direction: column;
 }
+body._pc .header_nav_list:hover .header_nav_sublink {
+	z-index: 5;
+}
+body._lock{
+	overflow: hidden;
+}
+.menu_icon {
+	display: block;
+	z-index: 15;
+	position: relative;
+	width: 37px;
+	height: 30px;
+	cursor: pointer;
+}
+.menu_icon span,
+.menu_icon::before,
+.menu_icon::after{
+	left: 0;
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	background-color: #1064E5;
+}
+/*Добавляем контент чтобы они работали*/
+.menu_icon:before,
+.menu_icon:after{
+	content: "";
+}
+/*Рисуем меню бургер*/
+.menu_icon:before{
+	top:0;
+}
+.menu_icon:after{
+	bottom: 0;
+}
+.menu_icon span{
+	top: 50%;
+	transform: scale(1) translate(0px, -50%);
+}
+.menu_icon._active span{
+	transform: scale(0) translate(0px, -50%);
+}
+.menu_icon._active::before{
+	top:50%;
+	transform: rotate(-45deg) translate(0px, -50%);
+}
+.menu_icon._active::after{
+	bottom:50%;
+	transform: rotate(45deg) translate(0px, 50%);
+}
+.header_nav_main {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 450px;
+	height: 100%;
+	background-color: white;
+	transition: right 0.3s ease 0s;
+	overflow: auto;
+}
+.header_nav_main._active{
+	right: 0;
+}
+
+
 .writing_header {
 	flex-direction: column;
 }
