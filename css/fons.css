@@ -9,11 +9,10 @@ body{
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.frame_tittle,
-.writing_tittle,
 .video_header_tittle, .video_name,
 .contacts_tittle,
 .aboutus_tittle,
+.popup_mail_title,
 .post_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
@@ -44,7 +43,8 @@ summary {
 .contacts_form_text, .contacts_form_input, .contacts_form_textarea,
 .aboutus_text,
 .aboutus_comment,
-.post-1_text {
+.post-1_text,
+.popup_mail_text {
 	font-size: 18px;
 }
 .sign_info{
@@ -76,14 +76,14 @@ summary {
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.frame_tittle,
 .writing_tittle, .writing_sumtittle,
 .seo_tittle,
 .video_header_tittle, .video_name, .video_writing_tittle,
 .contacts_tittle,
 .faq_tittle,
 .aboutus_tittle,
-.post_tittle{
+.post_tittle,
+.popup_mail_title{
 	font-size: 40px;
 }
 .sign_info span{
@@ -141,11 +141,11 @@ summary {
 .answer_tittle,
 .mailing_content,
 .footer_item,
-.frame_content,
 .seo_button,
 .video_name,.video_writing_tittle,
 .contacts_tittle, .contacts_subtittle,
-.fault_content{
+.fault_content,
+.popup_mail_content{
 	text-align: center;
 }
 @media(max-width: 1200px){
@@ -193,7 +193,6 @@ body._pc .header_nav_list{
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.frame_tittle,
 .writing_tittle, .writing_sumtittle,
 .seo_tittle,
 .video_name, .video_writing_tittle,
@@ -256,7 +255,6 @@ body._pc .header_nav_list{
 .acq_tittle,
 .answer_tittle,
 .mailing_tittle,
-.frame_tittle,
 .seo_tittle,
 .video_header_tittle, .video_name, .video_writing_tittle,
 .faq_tittle,
