@@ -148,7 +148,11 @@ summary {
 .fault_content{
 	text-align: center;
 }
-
+@media(max-width: 1200px){
+body._pc .header_nav_list{
+	font-size: 18px;
+}
+}
 @media(max-width: 768px){
 .writing_body .writing_tag_elem{
 	font-size: 10px;

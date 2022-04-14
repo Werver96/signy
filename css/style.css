@@ -70,6 +70,10 @@
 	display: none;
 }
 .header_nav_main {}
+.logo_menu {
+	margin: 20px 4vw;
+	display: none;
+}
 .header_nav_lists {}
 .header_nav_list {
 	position: relative;
@@ -81,10 +85,11 @@
 	margin: 0 0.26vw;
 }
 
-
-.header_nav_link {}
 .header_nav_link{
 	padding: 17px;
+}
+.header_nav_list_small{
+	padding: 17px 14px;
 }
 .header_nav_link:hover{
 	background: #E2EDFB;
@@ -963,6 +968,9 @@ details[open] > .faq_subtittle:after {
 }
 @media(max-width: 1200px){
 /*Делаем меню бургер*/
+.logo_menu {
+	display: block;
+}
 .header_nav_lists{
 	display: flex;
 	flex-direction: column;
@@ -970,6 +978,73 @@ details[open] > .faq_subtittle:after {
 body._pc .header_nav_list:hover .header_nav_sublink {
 	z-index: 5;
 }
+/*-------Оформляем меню при открытом бургере на пк-------*/
+body._pc .header_nav_list .header_nav_sublink{
+	position: static;
+	display: block;
+}
+body._pc .header_nav_list_first{
+	border-top: 1px solid #1064E5;
+	border-bottom: 1px solid #1064E5;
+	padding: 2.78vw 0 1.6vw;
+}
+body._pc .header_nav_list_center{
+	border-top: 1px solid #1064E5;
+	padding: 2.78vw 0 0;
+	margin-top: 2vw;
+}
+body._pc .header_nav_lists {
+	padding: 0 3vw;
+}
+.header_nav_list {
+	letter-spacing: 0.19em;
+}
+body._pc .header_nav_link_open::after {
+	content: none;
+}
+body._pc .header_nav_link:hover{
+	background: none;
+	color: #1064E5;
+}
+
+body._pc .header_nav_sublink {}
+body._pc .header_nav_link{
+	display: inline-block;
+}
+
+body._pc .header_nav_list_4{
+	padding: 0;
+}
+body._pc .header_nav_list_3{
+	padding: 0;
+}
+body._pc .header_nav_last{
+	border-top: 1px solid #1064E5;
+	padding: 2.78vw 0 1.6vw;
+	margin-top: 2vw;
+}
+body._pc .header_nav_sublink_last{
+	display: flex !important;
+}
+.header_nav_last span{
+	color: #1064E5;
+}
+/*Порядок расположения меню на пк в бургер меню*/
+body._pc .header_nav_list_first{
+	order: -10;
+}
+body._pc .header_nav_list_1{
+	order: -2;
+	margin-top: 2vw;
+}
+body._pc .header_nav_list_2{
+	order: -1;
+}
+/*изменим ссылку вход*/
+body._pc .header_nav_list_1 .button_blank_mob{
+padding: 8px 83px;
+}
+/*-------Оформляем меню при открытом бургере на пк-------*/
 body._lock{
 	overflow: hidden;
 }
@@ -1369,6 +1444,13 @@ background: url(../image/header/header_man.png) right -49px top 5px / 258px  no-
 }
 .header_status_text{
 	white-space: nowrap;
+}
+/*---------Делаем меню на весь экран для пк ниже 576px---------*/
+body._pc .header_nav_main{
+	width: 100%;
+}
+body._pc .header_nav_list_2 .button_full_mob{
+	padding: 8px 32px;
 }
 }
 @media(max-width: 425px){
