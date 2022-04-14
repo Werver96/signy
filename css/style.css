@@ -1581,6 +1581,12 @@ body._touch .header_nav_main{
 body._touch .header_nav_list_2 .button_full_mob{
 	padding: 8px 32px;
 }
+body._touch .header_nav_list_4 .header_nav_link{
+	padding-right: calc(100vw - 104px);;
+}
+body._touch .header_nav_list_3 .header_nav_link{
+	padding-right: calc(100vw - 155px);
+}
 }
 @media(max-width: 425px){
 /*Адаптив для страницы video.html*/
@@ -1619,6 +1625,7 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 .contacts_map iframe{
 	height: 50vw;
 }
+
 }
 @media(max-width: 375px){
 .friends_logo{
