@@ -1189,6 +1189,12 @@ body._touch .header_nav_list._active .header_nav_sublink{
 body._touch .header_nav_link{
 	padding-right: 0;
 }
+body._touch .header_nav_list_4 .header_nav_link{
+	padding-right: 83%;
+}
+body._touch .header_nav_list_3 .header_nav_link{
+	padding-right: 71%;
+}
 body._touch .header_nav_list_1 .button_blank_mob{
 padding: 8px 77px;
 }
