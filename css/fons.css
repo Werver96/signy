@@ -149,6 +149,9 @@ summary {
 	text-align: center;
 }
 @media(max-width: 1200px){
+body._touch .header_nav_list{
+	font-size: 16px;
+}
 body._pc .header_nav_list{
 	font-size: 18px;
 }

@@ -117,31 +117,12 @@
 body._pc .header_nav_list:hover .header_nav_sublink {
 	display: block;
 }
+
 .menu_arrow{
 	display: block;
 }
-body._touch .header_nav_link_open:after{
-	content: none;
-}
-body._touch .header_nav_list._active .header_nav_sublink {
-	display: block;
-	z-index: 5;
-}
-
-body._touch .menu_arrow{
-	display: block;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #061224;
-	transition: transform 0.3s ease 0s;
-	position: absolute;
-	top: 20px;
-	right: 0;
-}
-body._touch .header_nav_list._active .menu_arrow {
-	transform: rotate(-180deg);
+body._pc .menu_arrow{
+	display: none;
 }
 .header_nav_sublink a{
 	display: block;
@@ -149,9 +130,10 @@ body._touch .header_nav_list._active .menu_arrow {
 .header_nav_sublink_first a{
 	padding-right: 27px;
 }
-.header_main {
-
+.header_nav_sublink_last a{
+	padding-right: 25px;
 }
+.header_main {}
 .header_main_tittle {
 	margin-top: 7vw;
 	width: 40%;
@@ -957,6 +939,45 @@ details[open] > .faq_subtittle:after {
 	max-width: 679px;
 	margin-bottom: 15px;
 }
+/*-------Оформляем меню при открытом бургере на _touch-------*/
+body._touch .header_nav_link_open:after{
+	content: none;
+}
+body._touch .header_nav_list._active .header_nav_sublink {
+	display: block;
+	z-index: 5;
+}
+
+body._touch .menu_arrow{
+	display: block;
+	width: 0;
+	height: 0;
+	transition: transform 0.3s ease 0s;
+	position: absolute;
+	top: 23px;
+	right: 0;
+}
+
+/*--------------------------------------------------*/
+body._touch .header_nav_list_first .menu_arrow {
+	left: 145px;
+}
+body._touch .header_nav_list_center .menu_arrow {
+	left: 94px;
+}
+body._touch .header_nav_last .menu_arrow {
+	left: 53px;
+}
+/*--------------------------------------------------*/
+body._touch .header_nav_list._active .menu_arrow {
+	transform: scaleY(-1);
+	top: 28px;
+}
+/*---------------------------------------------------*/
+body._touch .header_nav_sublink_first a {
+	white-space: nowrap;
+	padding-right: 17px;
+}
 
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
@@ -1106,6 +1127,79 @@ body._lock{
 .header_nav_main._active{
 	right: 0;
 }
+/*-------Оформляем меню при открытом бургере на _touch-------*/
+body._touch .header_nav_list._active .header_nav_sublink{
+	position: static;
+	display: block;
+}
+body._touch .header_nav_list_first{
+	border-top: 1px solid #1064E5;
+	padding: 30px 0 1.6vw;
+}
+
+body._touch .header_nav_list_center{
+	margin-top: 16px;
+
+}
+body._touch .header_nav_lists {
+	padding: 0 3vw;
+}
+body._touch .header_nav_list_4{
+	padding: 0;
+	margin-top: 33px;
+}
+body._touch .header_nav_list_3{
+	padding: 0;
+	margin: 50px 0 33px;
+}
+
+
+body._touch .header_nav_main {}
+
+
+
+/*---------Изначальная позиция иконок открытия меню-----*/
+body._touch .header_nav_list_first .menu_arrow {
+	left: 188px;
+	top: 37px;
+}
+body._touch .header_nav_list_center .menu_arrow {
+	left: 120px;
+}
+body._touch .header_nav_last .menu_arrow {
+	left: 65px;
+	top: 28px;
+}
+/*----------Позичия иконки открытия при открытии--------*/
+body._touch .header_nav_list_first._active .menu_arrow {
+	top: 43px;
+}
+body._touch .header_nav_last._active .menu_arrow {
+	top: 32px;
+}
+/*---------Подменю при открытии синим цветом------------*/
+body._touch .header_nav_list._active .header_nav_link_open{
+	color: #1064E5;
+}
+
+/*------------------------------------------------------*/
+body._touch .header_nav_list._active .header_nav_sublink{
+	margin-top: 17px;
+}
+body._touch .header_nav_link{
+	padding-right: 0;
+}
+body._touch .header_nav_list_1 .button_blank_mob{
+padding: 8px 77px;
+}
+body._touch .header_nav_list_1{
+	margin-left: 17px;
+}
+body._touch .header_nav_list_2{
+	margin-left: 17px;
+}
+
+
 
 
 .writing_header {
@@ -1142,6 +1236,7 @@ body._lock{
 .writing_elem:last-child{
 	display: none;
 }
+
 /*Адаптив для страницы about.html*/
 
 }
@@ -1450,6 +1545,13 @@ body._pc .header_nav_main{
 	width: 100%;
 }
 body._pc .header_nav_list_2 .button_full_mob{
+	padding: 8px 32px;
+}
+/*-------Делаем меню на весь экран для touch ниже 576px-------*/
+body._touch .header_nav_main{
+	width: 100%;
+}
+body._touch .header_nav_list_2 .button_full_mob{
 	padding: 8px 32px;
 }
 }
