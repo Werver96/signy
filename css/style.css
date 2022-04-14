@@ -956,6 +956,7 @@ body._touch .menu_arrow{
 	position: absolute;
 	top: 23px;
 	right: 0;
+
 }
 
 /*--------------------------------------------------*/
@@ -1047,9 +1048,9 @@ body._pc .header_nav_last{
 body._pc .header_nav_sublink_last{
 	display: flex !important;
 }
-.header_nav_last span{
+/*.header_nav_last span{
 	color: #1064E5;
-}
+}*/
 /*Порядок расположения меню на пк в бургер меню*/
 body._pc .header_nav_list_first{
 	order: -10;
@@ -1159,23 +1160,40 @@ body._touch .header_nav_main {}
 
 
 /*---------Изначальная позиция иконок открытия меню-----*/
+body._touch .menu_arrow{
+	width: auto;
+	height: auto;
+	padding: 24px 17px 14px;
+
+/*
+	display: block;
+	transition: transform 0.3s ease 0s;
+	position: absolute;
+	top: 23px;
+	right: 0;
+*/
+}
 body._touch .header_nav_list_first .menu_arrow {
-	left: 188px;
-	top: 37px;
+	left: 170px;
+	top: 11px;
 }
 body._touch .header_nav_list_center .menu_arrow {
-	left: 120px;
+	left: 108px;
+	top: 0;
 }
 body._touch .header_nav_last .menu_arrow {
-	left: 65px;
-	top: 28px;
+	left: 50px;
+	top: 0px;
 }
 /*----------Позичия иконки открытия при открытии--------*/
 body._touch .header_nav_list_first._active .menu_arrow {
-	top: 43px;
+	top: 11px;
+}
+body._touch .header_nav_list_center._active .menu_arrow {
+	top: 0;
 }
 body._touch .header_nav_last._active .menu_arrow {
-	top: 32px;
+	top: 0px;
 }
 /*---------Подменю при открытии синим цветом------------*/
 body._touch .header_nav_list._active .header_nav_link_open{
