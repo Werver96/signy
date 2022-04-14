@@ -1140,7 +1140,10 @@ body._touch .header_nav_list_first{
 
 body._touch .header_nav_list_center{
 	margin-top: 16px;
-
+}
+body._touch .header_nav_last{
+		border-top: 1px solid #1064E5;
+		margin-top: 28px;
 }
 body._touch .header_nav_lists {
 	padding: 0 3vw;
