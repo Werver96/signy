@@ -1046,6 +1046,24 @@ body.contacts .popup_mail_close img{
 	width: 24px;
 }
 
+/*-----------Страница faq------------------------*/
+body.faq .popup_mail_content{
+	background: #DEEEFC;
+	width: auto;
+	padding: 50px 80px 50px;
+}
+body.faq .popup_mail_close {
+	top: 20px;
+	right: 20px;
+}
+body.faq .popup_mail_img {
+	padding-top: 30px;
+}
+body.faq .popup_mail_close img{
+	width: 24px;
+}
+
+
 
 /*---------------------------------------------------*/
 /*------------Общие стили для модальных окон---------*/
