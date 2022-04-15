@@ -12,7 +12,7 @@ body{
 .video_header_tittle, .video_name,
 .contacts_tittle,
 .aboutus_tittle,
-.popup_mail_title,
+.popup_title,
 .post_tittle{
 	font-family: 'IBM Plex Serif', serif;
 }
@@ -44,7 +44,7 @@ summary {
 .aboutus_text,
 .aboutus_comment,
 .post-1_text,
-.popup_mail_text {
+.popup_text {
 	font-size: 18px;
 }
 .sign_info{
@@ -83,7 +83,7 @@ summary {
 .faq_tittle,
 .aboutus_tittle,
 .post_tittle,
-.popup_mail_title{
+.popup_title{
 	font-size: 40px;
 }
 .sign_info span{
