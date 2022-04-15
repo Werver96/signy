@@ -1111,7 +1111,32 @@ body._touch .header_nav_sublink_first a {
 .popup__content_test .contacts_form_text{
 	text-align: left;
 }
+
 /*---------------------------------------------------*/
+/*------------Вход-----------------------------------*/
+.popup__content_in{
+	background: #DEEEFC;
+	position: relative;
+	text-align: center;
+	padding: 0 65px 30px;
+}
+
+.popup__content_in .faq_contacts_contaiter{
+	padding: 0;
+}
+.popup__content_in .contacts_form_link{
+	margin: 45px 0 30px;
+}
+.popup__content_in .contacts_form_text{
+	text-align: left;
+}
+.popup__content_in .contacts_form_submit{
+	margin-top: 30px;
+}
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
 
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались

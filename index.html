@@ -44,7 +44,8 @@
 								</li>
 								<li class="header_nav_list header_nav_list_4"><a href="index.html#price" class="header_nav_link header_nav_list_small">ЦЕНЫ</a></li>
 								<li class="header_nav_list header_nav_list_3"><a href="contacts.html" class="header_nav_link header_nav_list_small">КОНТАКТЫ</a></li>
-								<li class="header_nav_list header_nav_list_1"><span class="button_blank_mob">ВХОД</span></li>
+								<!--  <a href="#popup_in" class="popup-link">link</a>  --ссылка для открытия окна  -->
+								<li class="header_nav_list header_nav_list_1"><a href="#popup_in" class="button_blank_mob popup-link">ВХОД</a></li>
 								<li class="header_nav_list header_nav_list_2"><a href="#popup_reg" class="button_full_mob popup-link">РЕГИСТРАЦИЯ</a></li>
 								<li class="header_nav_list header_nav_last"><a href="" class="header_nav_link header_nav_link_open">Рус</a>
 									<span class="menu_arrow"><img src="image/header/menu_open.svg" alt=""></span>
@@ -69,7 +70,7 @@
 						<div class="header_main_subtittle">Быстрая регистрация</div>
 						<div class="header_main_text">Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</div>
 					</div>
-					<div class="header_button"><span class="header_button_link button_full">ПОПРОБОВАТЬ БЕСПЛАТНО</span></div>
+					<div class="header_button"><a href="#popup_in" class="header_button_link button_full popup-link">ПОПРОБОВАТЬ БЕСПЛАТНО</a></div>
 					<div class="header_input">
 						<input type="radio">
 						<input type="radio">
@@ -322,7 +323,7 @@
 						<div class="footer_elem"><a href="contacts.html">Контакты</a></div>
 					</div>
 					<div class="footer_left">
-						<div class="footer_elem"><a href="">Вход</a></div>
+						<div class="footer_elem"><a href="#popup_in" class="popup-link">Вход</a></div>
 						<div class="footer_elem "><a class="popup-link" href="#popup_reg">Регистрация</a></div>
 					</div>
 				</div>
@@ -374,7 +375,7 @@
 						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
 						<div class="contacts_form_text">Пароль*:</div>
 						<input class="contacts_form_input" type="password" name="password" required placeholder="Введите пароль">
-						<input class="contacts_form_submit button_full" type="submit" value="ОТПРАВИТЬ">
+						<input class="contacts_form_submit button_full" type="submit" value="РЕГИСТРАЦИЯ">
 					</form>
 				</div>
 			</div>
@@ -398,6 +399,27 @@
 						<div class="contacts_form_text">Телефон*:</div>
 						<input class="contacts_form_input" type="text" name="tel" required placeholder="+375 XX XXX XX XX">
 						<input class="contacts_form_submit button_full" type="submit" value="ОТПРАВИТЬ">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  <a href="#popup_in" class="popup-link">link</a>  --ссылка для открытия окна  -->
+<div id="popup_in" class="popup">
+	<div class="popup__body">
+		<div class="popup__content popup__content_in">
+			<a href="" class="close-popup"><img src="image/popup/close.svg" alt=""></a>
+			<div class="faq_contacts_contaiter">
+				<div class="contacts_tittle">Вход в систему</div>
+				<div class="contacts_subtittle">Заполните форму для входа</div>
+				<div class="faq_contacts_content">
+					<form class="contacts_form" action="error.html">
+						<div class="contacts_form_text">Электронная почта*:</div>
+						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
+						<div class="contacts_form_text">Пароль*:</div>
+						<input class="contacts_form_input" type="password" name="password" required placeholder="Введите пароль">
+						<input class="contacts_form_submit button_full" type="submit" value="ВОЙТИ">
 					</form>
 				</div>
 			</div>
