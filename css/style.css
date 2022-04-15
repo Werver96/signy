@@ -1792,6 +1792,21 @@ body._touch .header_nav_list_3 .header_nav_link{
 	width: 18px;
 }
 /*--------------------------------------------------------------*/
+/*-------------Адаптив для регистрации-----576px----------------*/
+.popup__content_reg{
+	width: 85vw;
+}
+.popup__content_reg .faq_contacts_content{
+	width: 100%;
+}
+.popup__content_reg .contacts_form_submit{
+	width: 100%;
+	padding: 14px 44px;
+}
+.close-popup img {
+	width: 18px;
+}
+/*--------------------------------------------------------------*/
 /*--------------------------------------------------------------*/
 }
 @media(max-width: 425px){
@@ -1838,6 +1853,18 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 	padding: 30px;
 }
 .popup__content_in .faq_contacts_content{
+	width: 100%;
+}
+.close-popup img {
+	width: 18px;
+}
+/*--------------------------------------------------------------*/
+/*-------------Адаптив для входа в систему 576px----------------*/
+.popup__content_reg{
+	width: 85vw;
+	padding: 30px;
+}
+.popup__content_reg .faq_contacts_content{
 	width: 100%;
 }
 .close-popup img {
