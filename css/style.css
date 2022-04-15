@@ -506,6 +506,16 @@ details{
 .footer_item {
 	opacity: 0.4;
 }
+/*Оформляем всплывающее окно*/
+.frame {}
+.frame_container {}
+.frame_content {
+	padding: 5.86vw 0 6.6vw 0;
+}
+.frame_tittle {
+	margin-bottom: 40px;
+}
+.frame_text {}
 
 /*Оформляем страницу блог*/
 .writing {}
@@ -969,65 +979,7 @@ body._touch .header_nav_sublink_first a {
 	white-space: nowrap;
 	padding-right: 17px;
 }
-/*----Стили для всплывающих окон---------------------*/
-/*---------------Стили для popup---------------------*/
-.popup_mail {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: #061224B2;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-}
-.popup_mail:target {
-	opacity: 1;
-	visibility: visible;
-}
-.popup_mail_area{
-	position: absolute;
-	width: 100%;;
-	height: 100%;
-	top: 0;
-	left: 0;
 
-}
-/*-----------Центрируем контент тела popup-----------*/
-.popup_mail_body {
-	min-height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 30px 10px;
-}
-.popup_mail_content {
-	background: white;
-	width: 100%;
-	position: relative;
-	padding: 5.86vw 0 6.6vw 0;
-}
-
-.popup_mail_close {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	font-size: 20px;
-	color: #0046B0;
-}
-.popup_mail_title {
-	font-size: 40px;
-	margin-bottom: 2.78vw;
-}
-.popup_mail_text {}
-.popup_mail_fix{
-	width: 0;
-	height: 0;
-	position: fixed;
-	left: 0;
-	top: 0;
-}
-/*---------------------------------------------------*/
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
