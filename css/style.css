@@ -993,6 +993,7 @@ body._touch .header_nav_sublink_first a {
 	left: 0;
 
 }
+
 /*-----------Центрируем контент тела popup-----------*/
 .popup_mail_body {
 	min-height: 100%;
@@ -1028,7 +1029,23 @@ body._touch .header_nav_sublink_first a {
 	top: 0;
 }
 /*---------------------------------------------------*/
-/*----Стили для всплывающих окон c Javascript--------*/
+/*-----------Страница contact------------------------*/
+body.contacts .popup_mail_content{
+	background: #DEEEFC;
+	width: auto;
+	padding: 50px 80px 50px;
+}
+body.contacts .popup_mail_close {
+	top: 20px;
+	right: 20px;
+}
+body.contacts .popup_mail_img {
+	padding-top: 30px;
+}
+body.contacts .popup_mail_close img{
+	width: 24px;
+}
+
 
 /*---------------------------------------------------*/
 /*------------Общие стили для модальных окон---------*/
