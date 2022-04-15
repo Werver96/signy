@@ -1767,7 +1767,7 @@ body._pc .header_nav_main{
 body._pc .header_nav_list_2 .button_full_mob{
 	padding: 8px 32px;
 }
-/*-------Делаем меню на весь экран для touch ниже 576px-------*/
+/*-------Делаем меню на весь экран для touch ниже 576px--------*/
 body._touch .header_nav_main{
 	width: 100%;
 }
@@ -1780,6 +1780,19 @@ body._touch .header_nav_list_4 .header_nav_link{
 body._touch .header_nav_list_3 .header_nav_link{
 	padding-right: calc(100vw - 155px);
 }
+/*--------------------------------------------------------------*/
+/*-------------Адаптив для входа в систему 576px----------------*/
+.popup__content_in{
+	width: 85vw;
+}
+.popup__content_in .faq_contacts_content{
+	width: 100%;
+}
+.close-popup img {
+	width: 18px;
+}
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
 }
 @media(max-width: 425px){
 /*Адаптив для страницы video.html*/
@@ -1818,7 +1831,20 @@ background: url(../image/header/header_man.png) right -95px top 15px / 243px  no
 .contacts_map iframe{
 	height: 50vw;
 }
-
+/*--------------------------------------------------------------*/
+/*-------------Адаптив для входа в систему 576px----------------*/
+.popup__content_in{
+	width: 85vw;
+	padding: 30px;
+}
+.popup__content_in .faq_contacts_content{
+	width: 100%;
+}
+.close-popup img {
+	width: 18px;
+}
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
 }
 @media(max-width: 375px){
 .friends_logo{
