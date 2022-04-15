@@ -117,7 +117,7 @@
 							<li class="product_text">Загружай XML файл с собственным шаблоном готового документа. Это удобно!</li>
 							<li class="product_text">Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!</li>
 						</ul>
-						<div class="product_button"><span class="button_blank">УЗНАТЬ БОЛЬШЕ</span></div>
+						<div class="product_button"><a href="#popup_test" class="button_blank popup-link">УЗНАТЬ БОЛЬШЕ</a></div>
 					</div>
 					<div class="product_elem product_elem_2">
 						<img class="product_img" src="image/main_content/produkt.jpg" alt="">
@@ -165,7 +165,7 @@
 							<div class="sign_subtittle">Individual</div>
 							<div class="sign_text">Неограниченное количество документов</div>
 							<div class="sign_info"></div>
-							<div class="sign_button"><a class="button_full_mob" href="contacts.html">СВЯЗАТЬСЯ С НАМИ</a></div>
+							<div class="sign_button"><a class="button_full_mob popup-link" href="#popup_test">СВЯЗАТЬСЯ С НАМИ</a></div>
 						</div>
 					</div>
 				</div>
@@ -373,7 +373,30 @@
 						<div class="contacts_form_text">Электронная почта*:</div>
 						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
 						<div class="contacts_form_text">Пароль*:</div>
-						<input class="contacts_form_input" type="text" name="" required="as" placeholder="Введите пароль">
+						<input class="contacts_form_input" type="password" name="password" required placeholder="Введите пароль">
+						<input class="contacts_form_submit button_full" type="submit" value="ОТПРАВИТЬ">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  <a href="#popup_test" class="popup-link">link</a>  --ссылка для открытия окна  -->
+<div id="popup_test" class="popup">
+	<div class="popup__body">
+		<div class="popup__content popup__content_test">
+			<a href="" class="close-popup"><img src="image/popup/close.svg" alt=""></a>
+			<div class="faq_contacts_contaiter">
+				<div class="contacts_tittle">Свяжитесь с нами!</div>
+				<div class="contacts_subtittle">Заполни форму и наши менеджеры свяжутся с тобой</div>
+				<div class="faq_contacts_content">
+					<form class="contacts_form" action="error.html">
+						<div class="contacts_form_text">Имя*:</div>
+						<input class="contacts_form_input" type="text" name="name" required placeholder="Введите ваше имя">
+						<div class="contacts_form_text">Электронная почта*:</div>
+						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
+						<div class="contacts_form_text">Телефон*:</div>
+						<input class="contacts_form_input" type="text" name="tel" required placeholder="+375 XX XXX XX XX">
 						<input class="contacts_form_submit button_full" type="submit" value="ОТПРАВИТЬ">
 					</form>
 				</div>
