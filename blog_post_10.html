@@ -44,8 +44,8 @@
 								</li>
 								<li class="header_nav_list header_nav_list_4"><a href="index.html#price" class="header_nav_link header_nav_list_small">ЦЕНЫ</a></li>
 								<li class="header_nav_list header_nav_list_3"><a href="contacts.html" class="header_nav_link header_nav_list_small">КОНТАКТЫ</a></li>
-								<li class="header_nav_list header_nav_list_1"><span class="button_blank_mob">ВХОД</span></li>
-								<li class="header_nav_list header_nav_list_2"><span class="button_full_mob">РЕГИСТРАЦИЯ</span></li>
+								<li class="header_nav_list header_nav_list_1"><a href="#popup_in" class="button_blank_mob popup-link">ВХОД</a></li>
+								<li class="header_nav_list header_nav_list_2"><a href="#popup_reg" class="button_full_mob popup-link">РЕГИСТРАЦИЯ</a></li>
 								<li class="header_nav_list header_nav_last"><a href="" class="header_nav_link header_nav_link_open">Рус</a>
 									<span class="menu_arrow"><img src="image/header/menu_open.svg" alt=""></span>
 									<ul class="header_nav_sublink header_nav_sublink_last">
@@ -117,26 +117,23 @@
 			</div>
 		</div>
 		<div class="mailing">
-			<div class="mailing_container">
-				<div class="mailing_content">
-					<div class="mailing_tittle">Подпишись на наши новости!</div>
-					<div class="mailing_text">Введи свой электронный адрес и будь в курсе всех обновлений</div>
-					<form class="mailing_form" method="get" action="Search.php">
-						<div class="mailing_box">
-							<div class="mailing_elem">
-								<input class="mailing_area" type="text" name="mailing">
-							</div>
+				<div class="mailing_container">
+					<div class="mailing_content">
+						<div class="mailing_tittle">Подпишись на наши новости!</div>
+						<div class="mailing_text">Введи свой электронный адрес и будь в курсе всех обновлений</div>
+						<form class="mailing_form" method="get" action="#mail">
+							<div class="mailing_box">
 								<div class="mailing_elem">
-									<a  class="button_full" href="#mail">ОТПРАВИТЬ</a>
-								<!--
-									<input class="mailing_submit button_full" type="submit" value="ОТПРАВИТЬ">
-								-->
+									<input class="mailing_area" required type="text" name="mailing">
 								</div>
-						</div>
-					</form>
+								<div class="mailing_elem">
+									<input class="mailing_submit button_full" type="submit" value="ОТПРАВИТЬ">
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 </div>
 <footer class="footer">
@@ -154,8 +151,8 @@
 						<div class="footer_elem"><a href="contacts.html">Контакты</a></div>
 					</div>
 					<div class="footer_left">
-						<div class="footer_elem"><a href="">Вход</a></div>
-						<div class="footer_elem"><a href="">Регистрация</a></div>
+						<div class="footer_elem"><a href="#popup_in" class="popup-link">Вход</a></div>
+						<div class="footer_elem "><a class="popup-link" href="#popup_reg">Регистрация</a></div>
 					</div>
 				</div>
 			</div>
@@ -189,7 +186,51 @@
 		</div>
 	</div>
 </div>
-<div id="index" class="popup_mail_fix"></div>
-<script src="js/script.js"></script>
+<!--  <a href="#popup_in" class="popup-link">link</a>  --ссылка для открытия окна  -->
+<div id="popup_in" class="popup">
+	<div class="popup__body">
+		<div class="popup__content popup__content_in">
+			<a href="" class="close-popup"><img src="image/popup/close.svg" alt=""></a>
+			<div class="faq_contacts_contaiter">
+				<div class="contacts_tittle">Вход в систему</div>
+				<div class="contacts_subtittle">Заполните форму для входа</div>
+				<div class="faq_contacts_content">
+					<form class="contacts_form" action="error.html">
+						<div class="contacts_form_text">Электронная почта*:</div>
+						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
+						<div class="contacts_form_text">Пароль*:</div>
+						<input class="contacts_form_input" type="password" name="password" required placeholder="Введите пароль">
+						<input class="contacts_form_submit button_full" type="submit" value="ВОЙТИ">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  <a href="#popup_reg" class="popup-link">link</a>  --ссылка для открытия окна  -->
+<div id="popup_reg" class="popup">
+	<div class="popup__body">
+		<div class="popup__content popup__content_reg">
+			<a href="" class="close-popup"><img src="image/popup/close.svg" alt=""></a>
+			<div class="faq_contacts_contaiter">
+				<div class="contacts_tittle">Регистрация</div>
+				<div class="contacts_subtittle">Заполните форму для регистрации</div>
+				<div class="faq_contacts_content">
+					<form class="contacts_form" action="error.html">
+						<div class="contacts_form_text">Имя*:</div>
+						<input class="contacts_form_input" type="text" name="name" required placeholder="Введите ваше имя">
+						<div class="contacts_form_text">Электронная почта*:</div>
+						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
+						<div class="contacts_form_text">Пароль*:</div>
+						<input class="contacts_form_input" type="password" name="password" required placeholder="Введите пароль">
+						<input class="contacts_form_submit button_full" type="submit" value="РЕГИСТРАЦИЯ">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/menu.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
