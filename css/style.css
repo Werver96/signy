@@ -969,7 +969,7 @@ body._touch .header_nav_sublink_first a {
 	white-space: nowrap;
 	padding-right: 17px;
 }
-/*----Стили для всплывающих окон---------------------*/
+/*----Стили для всплывающих окон без Javascript------*/
 /*---------------Стили для popup---------------------*/
 .popup_mail {
 	position: fixed;
@@ -1028,6 +1028,73 @@ body._touch .header_nav_sublink_first a {
 	top: 0;
 }
 /*---------------------------------------------------*/
+/*----Стили для всплывающих окон c Javascript--------*/
+
+/*---------------------------------------------------*/
+/*------------Общие стили для модальных окон---------*/
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(17, 17, 17, 0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s linear
+}
+.popup.open {
+	opacity: 1;
+	visibility: visible;
+}
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+.close-popup{
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.close-popup img{
+	width: 24px	;
+}
+.popup_title{
+	margin: 30px 0;
+}
+.popup_text{}
+.popup_img{
+	margin-top: 30px;
+}
+
+/*---------------------------------------------------*/
+/*------------Регистрация----------------------------*/
+.popup__content_reg{
+	background: #DEEEFC;
+	position: relative;
+	text-align: center;
+	padding: 0 65px 30px;
+}
+
+.popup__content_reg .faq_contacts_contaiter{
+	padding: 0;
+}
+.popup__content_reg .contacts_form_link{
+	margin: 45px 0 30px;
+}
+.popup__content_reg .contacts_form_text{
+	text-align: left;
+}
+.popup__content_reg .contacts_form_submit{
+	margin-top: 30px;
+}
+
+
 @media(max-width: 1440px){
 /* Cоздаем ограничивающий контейнер для того чтобы элементы не разъехались
  при большой ширине экрана*/
