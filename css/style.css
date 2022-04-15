@@ -15,6 +15,7 @@
 	box-sizing: border-box;
 	border-radius: 43px;
 	padding: 18px 32px;
+	cursor: pointer;
 }
 .button_full, .button_full_mob{
 	border: 1.5px solid #1064E5;
@@ -23,6 +24,7 @@
 	padding: 18px 32px;
 	background: #1064E5;
 	color: white;
+	cursor: pointer;
 }
 /* Поведение кнопок при наведении*/
 .button_blank:hover, .button_blank_mob:hover{
