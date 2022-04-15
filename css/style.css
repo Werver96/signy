@@ -888,7 +888,10 @@ details[open] > .faq_subtittle:after {
 	border-radius: 43px;
 	color: white;
 	letter-spacing: 2px;
-
+}
+.fault_button:hover{
+	border: 1px solid #061224;
+	color: #061224;
 }
 /*Оформляем посты*/
 .post {}
