@@ -62,7 +62,7 @@ function validateInfoFormIn() {
 }
 /*-------------------------------------------------------------------*/
 /*-------Валидация форм для контактов--------------------------------*/
-var formElementCont=document.forms.contact
+var formElementCont=document.forms.contact;
 formElementCont.onsubmit=validateInfoFormCont;
 function validateInfoFormCont() {
     var nameElement=formElementCont.elements.name;
