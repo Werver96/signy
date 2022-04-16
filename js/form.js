@@ -1,5 +1,5 @@
 /*-------Валидация форм для регистрации-------------------------------*/
-var formElement=document.forms[3];
+var formElement=document.reg;
 formElement.onsubmit=validateInfoForm;
 function validateInfoForm() {
     var nameElement=formElement.elements.name;
@@ -33,5 +33,3 @@ function validateInfoForm() {
         return false;
     }
 }
-
-    var telElement=formElement.elements.tel;
