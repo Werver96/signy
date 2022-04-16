@@ -86,7 +86,7 @@
 						</div>
 					</div>
 					<div class="contacts_tittle">...или напишите нам:</div>
-					<form class="contacts_form" action="#mail">
+					<form name="contact" class="contacts_form" action="#mail">
 						<div class="contacts_form_text">Имя*:</div>
 						<input class="contacts_form_input" type="text" name="name" required placeholder="Введите ваше имя">
 						<div class="contacts_form_text">Электронная почта*:</div>
@@ -95,7 +95,7 @@
 						<input class="contacts_form_input" type="text" name="tel" required placeholder="+375 XX XXX XX XX">
 						<div class="contacts_form_text">Сообщение:</div>
 						<textarea class="contacts_form_textarea" name="mytext" required placeholder="введите тут"></textarea><br>
-						<div class="contacts_form_submit_body"><input class="contacts_form_submit button_full" title="Отправить" type="submit" value="ОТПРАВИТЬ"></div>
+						<div class="contacts_form_submit_body"><input name="area" class="contacts_form_submit button_full" title="Отправить" type="submit" value="ОТПРАВИТЬ"></div>
 					</form>
 				</div>
 			</div>
@@ -162,7 +162,7 @@
 				<div class="contacts_tittle">Вход в систему</div>
 				<div class="contacts_subtittle">Заполните форму для входа</div>
 				<div class="faq_contacts_content">
-					<form class="contacts_form" action="error.html">
+					<form name="in" class="contacts_form" action="error.html">
 						<div class="contacts_form_text">Электронная почта*:</div>
 						<input class="contacts_form_input" type="text" name="mail" required placeholder="mail@mail.com">
 						<div class="contacts_form_text">Пароль*:</div>
