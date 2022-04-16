@@ -16,6 +16,7 @@
 	border-radius: 43px;
 	padding: 18px 32px;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 .button_full, .button_full_mob{
 	border: 1.5px solid #1064E5;
@@ -25,6 +26,7 @@
 	background: #1064E5;
 	color: white;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 /* Поведение кнопок при наведении*/
 .button_blank:hover, .button_blank_mob:hover{
@@ -89,6 +91,7 @@
 
 .header_nav_link{
 	padding: 17px;
+	transition: all 0.5s;
 }
 .header_nav_list_small{
 	padding: 17px 14px;
@@ -224,6 +227,10 @@ body._pc .menu_arrow{
 .motto_slogan {
 	display: flex;
 	margin: 0 1.74vw;
+	transition: all 0.3s;
+}
+body._pc .motto_slogan:hover {
+transform: scale(1.05);
 }
 .motto_slogan_img {
 	margin-right: 20px;
@@ -305,6 +312,10 @@ body._pc .menu_arrow{
 	margin: 2px;
 	position: relative;
 	border-radius: 4px;
+	transition: all 0.3s;
+}
+body._pc .sign_elem:hover {
+transform: scale(1.05);
 }
 .sign_subtittle {}
 .sign_text {
@@ -416,6 +427,10 @@ max-height: 88px;
 	display: block;
 	flex: 0 1 374px;
 	margin: 0 1.875vw;
+	transition: all 0.3s;
+}
+.about_elem:hover {
+transform: scale(1.05);
 }
 .about_img img{
 	width: 100%;
@@ -587,6 +602,7 @@ details{
 .writing_header {
 	display: flex;
 }
+
 .writing_header_image {
 	margin-right: 3vw;
 	flex: 1 0 60%;
@@ -633,8 +649,11 @@ details{
 .writing_elem {
 	flex: 0 1 27vw;
 	margin-bottom: 4.5vw;
+	transition: all 0.3s;
 }
-
+body._pc .writing_elem:hover {
+transform: scale(1.02);
+}
 
 .writing_header_img {}
 .writing_header_img img{
@@ -677,8 +696,12 @@ details{
 	margin-top: 15px;
 }
 .seo_button {
+
 }
-.seo_elem {}
+.seo_elem {
+	cursor: pointer;
+	display: inline-block;
+}
 /*Оформляем страницу видео*/
 /*Оформляем шапку контентной чаcти видео*/
 .video {}
@@ -955,6 +978,7 @@ details[open] > .faq_subtittle:after {
 	border-radius: 43px;
 	color: white;
 	letter-spacing: 2px;
+	transition: all 0.5s;
 }
 .fault_button:hover{
 	border: 1px solid #061224;
