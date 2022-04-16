@@ -354,6 +354,34 @@ body._pc .menu_arrow{
 .friends_tittle {
 	padding-bottom: 50px;
 }
+/*----------------------------------------------------------------*/
+/*---------------Пробуем слайдер для партнеров/друзей-------------*/
+.friends_slider {
+		overflow: hidden;
+}
+.friends_polosa {
+	position: relative;
+	display: flex;
+	transition: left 0.5s;
+
+}
+.friends_wrapper {
+	flex: 0 0 100%;}
+.friends_logo {}
+
+/*----------------------------------------------------------------*/
+.button_slider_partners {
+	width: 10px;
+	height: 10px;
+	border: 2px solid #1064E5;
+	border-radius: 5px;
+	margin: 0 4px;
+}
+.button_slider_partners_1 {
+	background: #1064E5;
+}
+.button_slider_partners_2 {}
+/*----------------------------------------------------------------*/
 .friends_logo {
 	display: flex;
 	justify-content: center;
@@ -361,6 +389,9 @@ body._pc .menu_arrow{
 }
 .friends_elem {
 	margin: 0 1.04em;
+}
+.friends_elem img{
+max-height: 88px;
 }
 .friends_input {
 	margin-top: 40px;
