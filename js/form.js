@@ -28,7 +28,7 @@ function validateInfoForm() {
         return false;
     }
     if (passValue.length<8) {
-        alert('Пароль должен быть более 8 символов!')
+        alert('Пароль должен быть менее 8 символов!')
         passElement.focus();
         passElement.style.borderColor='red';
         return false;
