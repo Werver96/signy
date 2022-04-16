@@ -115,6 +115,7 @@
 	display: none;
 	top:52px;
 	background: white;
+	z-index: 10;
 }
 body._pc .header_nav_list:hover .header_nav_sublink {
 	display: block;
