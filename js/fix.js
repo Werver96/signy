@@ -7,15 +7,11 @@ for (var i = 0; i < linksMenu.length; i++) {
 }
 function closeMenu() {
      document.getElementById('menu').classList.remove('_active');
+     document.body.classList.remove('_lock');
+     document.querySelector('.menu_icon').classList.remove('_active')
+
 }
 
 /*-------------------------------------------------------*/
 /*Скрываем меню при переходе по регистрации/вход---------*/
-linksMenu=document.getElementsByClassName('header_nav_link')
-for (var i = 0; i < linksMenu.length; i++) {
-    linkMenu=linksMenu[i];
-    linkMenu.onclick=closeMenu;
-}
-function closeMenu() {
-     document.getElementById('menu').classList.remove('_active');
-}
+//linksRegIn=document.querySelector('header_nav_link')
