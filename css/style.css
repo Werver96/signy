@@ -6,7 +6,18 @@
 
 
 .main {}
-.wrapper {}
+.wrapper {
+
+}
+.header_contant,
+.content_container,
+.footer_content{
+	max-width: 2000px;
+	margin: 0 auto;
+}
+.content {}
+.content_container {}
+
 .container{}
 /* Оформление кнопок*/
 /* Обычное поведение кнопок*/
