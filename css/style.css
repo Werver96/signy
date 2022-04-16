@@ -149,6 +149,7 @@ body._pc .menu_arrow{
 	display: flex;
 	position: relative;
 	transition: left 0.4s;
+	left: 0;
 }
 
 /*----------------------------------------------------------------*/
@@ -363,6 +364,7 @@ body._pc .menu_arrow{
 	position: relative;
 	display: flex;
 	transition: left 0.5s;
+	left: 0;
 
 }
 .friends_wrapper {
