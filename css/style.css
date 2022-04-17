@@ -712,6 +712,19 @@ transform: scale(1.02);
 .seo_elem {
 	cursor: pointer;
 	display: inline-block;
+	animation: MyAnimation 3s infinite;
+	padding: 10px;
+}
+body._pc .seo_button:hover{
+	transform: scale(1.02);
+}
+/*-----------------Анимация для развернуть-----------------*/
+@keyframes MyAnimation{
+    from { transform: translateY(0px);}
+    50% { transform: translateY(10px); }
+    50% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    to { transform: translateY(0px);}
 }
 /*Оформляем страницу видео*/
 /*Оформляем шапку контентной чаcти видео*/
@@ -1184,11 +1197,13 @@ body.faq .popup_mail_close img{
 	left: 0;
 	opacity: 0;
 	visibility: hidden;
+	overflow-y: auto;
 	transition: all 0.4s linear
 }
 .popup.open {
 	opacity: 1;
 	visibility: visible;
+	z-index: 20;
 }
 .popup__body {
 	min-height: 100%;
