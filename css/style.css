@@ -805,7 +805,7 @@ transform: scale(1.02);
 	padding-right: 15px;
 }
 .contacts_info_tel {
-	background: url(../image/contacts/phone.svg) no-repeat;
+	background: url(../image/contacts/sprite_contacts.png) no-repeat -5px -75px;
 	padding-left: 40px;
 }
 .contacts_info_tel p{
@@ -813,12 +813,13 @@ transform: scale(1.02);
 }
 .contacts_info_mail {
 	margin-bottom: 8px;
-	background: url(../image/contacts/mail.svg) no-repeat;
+	background: url(../image/contacts/sprite_contacts.png) no-repeat -5px -42px;
 	padding-left: 40px;
+	min-height: 16px;
 }
 .contacts_info_address {
 	padding: 4px 0 8px 40px;
-	background: url(../image/contacts/address.svg) no-repeat;
+	background: url(../image/contacts/sprite_contacts.png) no-repeat -5px 0;
 	margin-bottom: 16px;
 }
 .contacts_map {
