@@ -1291,8 +1291,20 @@ body.faq .popup_mail_close img{
 .popup__content_in .contacts_form_submit{
 	margin-top: 30px;
 }
-/*---------------------------------------------------*/
-
+/*------------Иконка на верх-------------------------*/
+.button_top{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 45px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all 0.5s;
+}
+body._pc .button_top:hover{
+transform: scale(1.28);
+opacity: 0.9;
+}
 /*---------------------------------------------------*/
 
 
