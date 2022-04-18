@@ -1315,6 +1315,26 @@ transform: scale(1.28);
 opacity: 0.9;
 }
 
+/*---------Анимируем иконку на вверх сайта----------------------------*/
+.button_top svg path:hover{
+	animation: MyAnimationToTop 4s infinite;
+}
+@keyframes MyAnimationToTop{
+    from { fill: #1064E5;
+    }
+    16% { fill: darkviolet;
+     }
+    33% { fill: red;
+     }
+    50% { fill: darkorange;
+    }
+    67% { fill: khaki;
+     }
+    83% { fill: green;
+    }
+    to { fill: deepskyblue;
+    }
+}
 /*--------------------------------------------------------------------*/
 /*------------------------Оформляем медиазапросы----------------------*/
 
