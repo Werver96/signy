@@ -42,11 +42,26 @@
 	border: 1.5px solid #1064E5;
 	background: #1064E5;
 	color: white;
+	animation: MyAnimationButton 6s infinite;
 }
 .button_full:hover, .button_full_mob:hover {
 	background: none;
 	color: rgba(6, 18, 36, 0.9);
+	animation: MyAnimationButton 6s infinite;
 }
+@keyframes MyAnimationButton{
+    from { background: #1064E5;
+    color: white;}
+    25% { background: none;
+    color: #1064E5; }
+    50% { background: #1064E5;
+    color: white; }
+    74% { background: none;
+    color: #1064E5; }
+    to { background: #1064E5;
+    color: white;}
+}
+
 /*---------Поведение кнопок при нажатииии-------------------------------*/
 .button_blank:active, .button_full:active, .button_full_mob:active{
 	border: 1.5px solid #0046B0;
@@ -78,6 +93,93 @@
 .header_nav_logo a{
 	display: block;
 }
+/*----------------------------------------------------------------------*/
+
+.logo_elem_s{
+	fill: ;
+}
+.logo_elem_i{
+	fill: ;
+}
+.logo_elem_g{
+	fill: ;
+}
+.logo_elem_n{
+	fill: ;
+}
+.logo_elem_y{
+	fill:;
+}
+/*----------------------------------------------------------------------*/
+.header_nav_logo:hover .logo_elem_s{
+	animation: MyAnimationS 3s;
+}
+@keyframes MyAnimationS{
+ from { transform: translateY(0px);}
+    25% { transform: translateY(-6px); }
+    75% { transform: translateY(0); }
+    76% { fill: red }
+    to { transform: translateY(0px);}
+}
+/*----------------------------------------------------------------------*/
+.header_nav_logo:hover .logo_elem_i{
+	animation: MyAnimationI 3s;
+	animation-delay: 1s;
+}
+@keyframes MyAnimationI{
+ from { transform: translateY(0px);}
+    25% { transform: translateY(-5px); }
+    75% { transform: translateY(0); }
+    76% { fill: red }
+    to { transform: translateY(0px);}
+}
+/*----------------------------------------------------------------------*/
+.header_nav_logo:hover .logo_elem_g{
+	animation: MyAnimationG 3s;
+	animation-delay: 2s;
+}
+@keyframes MyAnimationG{
+ from { transform: translateY(0px);}
+    25% { transform: translateY(-8px); }
+    75% { transform: translateY(0); }
+    76% { fill: red }
+    to { transform: translateY(0px);}
+}
+/*----------------------------------------------------------------------*/
+.header_nav_logo:hover .logo_elem_n{
+	animation: MyAnimationN 3s;
+	animation-delay: 3s;
+}
+@keyframes MyAnimationN{
+ from { transform: translateY(0px);}
+    25% { transform: translateY(-8px); }
+    75% { transform: translateY(0); }
+    76% { fill: red }
+    to { transform: translateY(0px);}
+}
+/*----------------------------------------------------------------------*/
+.header_nav_logo:hover .logo_elem_y{
+	animation: MyAnimationY 3s;
+	animation-delay: 4s;
+}
+@keyframes MyAnimationY{
+ from { transform: translateY(0px);}
+    25% { transform: translateY(-8px); }
+    75% { transform: translateY(0); }
+    76% { fill: red }
+    to { transform: translateY(0px);}
+}
+/*----------------------------------------------------------------------*/
+.header_nav_logo:hover .logo_elem_wrapper{
+	animation: MyAnimationWrap 3s;
+}
+@keyframes MyAnimationWrap{
+ from { fill: red}
+    to { fill: #1064E5}
+}
+/*----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
 .menu_icon {
 	display: none;
 }
@@ -112,6 +214,12 @@
 	position: relative;
 	left: 5px;
 	bottom: 3px;
+	animation: MyAnimationLink 1s infinite;
+}
+
+@keyframes MyAnimationLink{
+    from {bottom: 3px;}
+    to {bottom: 0px;}
 }
 /*--------------------Оформляем "Хлебные крошки"-----------------------*/
 .header_status {}
@@ -240,6 +348,10 @@ transform: scale(1.05);
 .motto_slogan_img {
 	margin-right: 20px;
 }
+
+
+
+
 .motto_slogan_info {}
 .motto_slogan_tittle {}
 .motto_slogan_text {
@@ -1317,22 +1429,22 @@ opacity: 0.9;
 
 /*---------Анимируем иконку на вверх сайта----------------------------*/
 .button_top svg path:hover{
-	animation: MyAnimationToTop 4s infinite;
+	animation: MyAnimationToTop 1s infinite;
 }
 @keyframes MyAnimationToTop{
     from { fill: #1064E5;
     }
-    16% { fill: darkviolet;
+    16% { fill: cornflowerblue;
      }
-    33% { fill: red;
+    33% { fill: lightskyblue;
      }
-    50% { fill: darkorange;
+    50% { fill: lightblue;
     }
-    67% { fill: khaki;
+    67% { fill: lightskyblue;
      }
-    83% { fill: green;
+    83% { fill: cornflowerblue;
     }
-    to { fill: deepskyblue;
+    to { fill: #1064E5;
     }
 }
 /*--------------------------------------------------------------------*/
